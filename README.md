@@ -1,2 +1,5 @@
 # DuckCoinCoin
-Project of C &amp; Java of Second year of University
+
+Project of C and Java of Second year of University
+
+Creating a blockchain.
