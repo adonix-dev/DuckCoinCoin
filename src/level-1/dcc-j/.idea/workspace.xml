@@ -15,10 +15,11 @@
       <file leaf-file-name="dcc_gui.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/dcc_gui/dcc_gui.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="14" column="56" lean-forward="true" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+            <state relative-caret-position="369">
+              <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#353#354#0" expanded="true" />
                 <element signature="e#435#436#0" expanded="true" />
               </folding>
             </state>
@@ -200,12 +201,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1516979882506</updated>
-      <workItem from="1516979884941" duration="203000" />
+      <workItem from="1516979884941" duration="762000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203000" />
+    <option name="totallyTimeSpent" value="762000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="806" extended-state="6" />
@@ -253,10 +254,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dcc_gui/dcc_gui.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="14" column="56" lean-forward="true" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+        <state relative-caret-position="369">
+          <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
             <element signature="e#435#436#0" expanded="true" />
           </folding>
         </state>

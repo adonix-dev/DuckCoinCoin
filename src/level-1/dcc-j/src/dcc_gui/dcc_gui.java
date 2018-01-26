@@ -25,6 +25,7 @@ public class dcc_gui {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
+        System.out.println("Hello world");
     }
 
 }
