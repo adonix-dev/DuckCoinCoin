@@ -8,5 +8,7 @@ CMakeFiles/ddc_c.dir/c-lib/sha256/sha256_utils.c.o: ../c-lib/sha256/sha256.h
 CMakeFiles/ddc_c.dir/c-lib/sha256/sha256_utils.c.o: ../c-lib/sha256/sha256_utils.c
 CMakeFiles/ddc_c.dir/c-lib/sha256/sha256_utils.c.o: ../c-lib/sha256/sha256_utils.h
 
+CMakeFiles/ddc_c.dir/main.c.o: .././c-lib/sha256/sha256.h
+CMakeFiles/ddc_c.dir/main.c.o: .././c-lib/sha256/sha256_utils.h
 CMakeFiles/ddc_c.dir/main.c.o: ../main.c
 

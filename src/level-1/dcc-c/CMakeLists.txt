@@ -7,4 +7,6 @@ add_executable(ddc_c
         c-lib/sha256/sha256.c
         c-lib/sha256/sha256.h
         c-lib/sha256/sha256_utils.c
-        c-lib/sha256/sha256_utils.h main.c)
+        c-lib/sha256/sha256_utils.h
+        main.c
+        )
