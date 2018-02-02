@@ -123,6 +123,87 @@ ddc_c/fast:
 	$(MAKE) -f CMakeFiles/ddc_c.dir/build.make CMakeFiles/ddc_c.dir/build
 .PHONY : ddc_c/fast
 
+Block.o: Block.c.o
+
+.PHONY : Block.o
+
+# target to build an object file
+Block.c.o:
+	$(MAKE) -f CMakeFiles/ddc_c.dir/build.make CMakeFiles/ddc_c.dir/Block.c.o
+.PHONY : Block.c.o
+
+Block.i: Block.c.i
+
+.PHONY : Block.i
+
+# target to preprocess a source file
+Block.c.i:
+	$(MAKE) -f CMakeFiles/ddc_c.dir/build.make CMakeFiles/ddc_c.dir/Block.c.i
+.PHONY : Block.c.i
+
+Block.s: Block.c.s
+
+.PHONY : Block.s
+
+# target to generate assembly for a file
+Block.c.s:
+	$(MAKE) -f CMakeFiles/ddc_c.dir/build.make CMakeFiles/ddc_c.dir/Block.c.s
+.PHONY : Block.c.s
+
+Blockchain.o: Blockchain.c.o
+
+.PHONY : Blockchain.o
+
+# target to build an object file
+Blockchain.c.o:
+	$(MAKE) -f CMakeFiles/ddc_c.dir/build.make CMakeFiles/ddc_c.dir/Blockchain.c.o
+.PHONY : Blockchain.c.o
+
+Blockchain.i: Blockchain.c.i
+
+.PHONY : Blockchain.i
+
+# target to preprocess a source file
+Blockchain.c.i:
+	$(MAKE) -f CMakeFiles/ddc_c.dir/build.make CMakeFiles/ddc_c.dir/Blockchain.c.i
+.PHONY : Blockchain.c.i
+
+Blockchain.s: Blockchain.c.s
+
+.PHONY : Blockchain.s
+
+# target to generate assembly for a file
+Blockchain.c.s:
+	$(MAKE) -f CMakeFiles/ddc_c.dir/build.make CMakeFiles/ddc_c.dir/Blockchain.c.s
+.PHONY : Blockchain.c.s
+
+Transaction.o: Transaction.c.o
+
+.PHONY : Transaction.o
+
+# target to build an object file
+Transaction.c.o:
+	$(MAKE) -f CMakeFiles/ddc_c.dir/build.make CMakeFiles/ddc_c.dir/Transaction.c.o
+.PHONY : Transaction.c.o
+
+Transaction.i: Transaction.c.i
+
+.PHONY : Transaction.i
+
+# target to preprocess a source file
+Transaction.c.i:
+	$(MAKE) -f CMakeFiles/ddc_c.dir/build.make CMakeFiles/ddc_c.dir/Transaction.c.i
+.PHONY : Transaction.c.i
+
+Transaction.s: Transaction.c.s
+
+.PHONY : Transaction.s
+
+# target to generate assembly for a file
+Transaction.c.s:
+	$(MAKE) -f CMakeFiles/ddc_c.dir/build.make CMakeFiles/ddc_c.dir/Transaction.c.s
+.PHONY : Transaction.c.s
+
 c-lib/sha256/sha256.o: c-lib/sha256/sha256.c.o
 
 .PHONY : c-lib/sha256/sha256.o
@@ -213,6 +294,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ddc_c"
+	@echo "... Block.o"
+	@echo "... Block.i"
+	@echo "... Block.s"
+	@echo "... Blockchain.o"
+	@echo "... Blockchain.i"
+	@echo "... Blockchain.s"
+	@echo "... Transaction.o"
+	@echo "... Transaction.i"
+	@echo "... Transaction.s"
 	@echo "... c-lib/sha256/sha256.o"
 	@echo "... c-lib/sha256/sha256.i"
 	@echo "... c-lib/sha256/sha256.s"

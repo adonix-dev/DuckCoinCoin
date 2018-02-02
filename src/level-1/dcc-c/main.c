@@ -1,31 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
-#include "./c-lib/sha256/sha256_utils.h"
 
-typedef struct Block{
 
-    short index;
-    time_t timestamp;
-    BYTE last_hash;
-    short nb_transactions;
-    BYTE* transactions;
-    BYTE merklel_root_hash;
-    BYTE current_hash;
-    short nonce;
-    struct Block* next_block;
-
-} Block;
-
-typedef struct Blockchain{
-
-    Block* first_block;
-
-    short difficulty;
-
-    size_t chain_size;
-
-} Blockchain;
+#include "Transaction.h"
+#include "Block.h"
+#include "Blockchain.h"
 
 
 void blockchain__init(Blockchain* blockchain, Block* block_index){
@@ -46,7 +25,11 @@ void blockchain__init(Blockchain* blockchain, Block* block_index){
     block->timestamp          = 0;
     block->last_hash          = 0;
     block->nb_transactions    = 0;
-    block->transactions       = NULL;
+
+    Transaction* transaction;
+    transaction->details = "from-to :1";
+
+    block->transactions       = transaction;
     block->merklel_root_hash  = 0;
     block->current_hash       = 0;
     block->nonce              = 0;
@@ -64,7 +47,8 @@ void blockchain__init(Blockchain* blockchain, Block* block_index){
 
 
 
-int main(void) {
+int main(int argc, const char* argv[]) {
+
     printf("Hello, World!\n");
 
     Block* block_index = (Block*)malloc(100*sizeof(Block*));
@@ -79,6 +63,8 @@ int main(void) {
     blockchain__init(blockchain, block_index);
 
     printf("%d", blockchain->first_block->index);
+
+    printf("%d",block_index[0].index);
 
 
 
