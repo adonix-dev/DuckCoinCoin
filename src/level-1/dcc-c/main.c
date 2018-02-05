@@ -1,16 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <stdbool.h>
 
 #include "Transaction.h"
 #include "Block.h"
 #include "Blockchain.h"
 
+/*
 
 void blockchain__init(Blockchain* blockchain, Block* block_index){
 
     blockchain->chain_size = 1;
     blockchain->difficulty = 0;
+
 
     Block* block = NULL;
 
@@ -20,7 +22,6 @@ void blockchain__init(Blockchain* blockchain, Block* block_index){
     }
 
     block_index[0] = *block;
-
     block->index              = 1;
     block->timestamp          = 0;
     block->last_hash          = 0;
@@ -38,7 +39,7 @@ void blockchain__init(Blockchain* blockchain, Block* block_index){
     blockchain->first_block = block;
 
 }
-
+*/
 /*void add_block(Blockchain* blockchain, Block* block){
 
     
@@ -46,25 +47,35 @@ void blockchain__init(Blockchain* blockchain, Block* block_index){
 }*/
 
 
-
 int main(int argc, const char* argv[]) {
 
     printf("Hello, World!\n");
 
-    Block* block_index = (Block*)malloc(100*sizeof(Block*));
+    Transaction transaction = newTransaction();
 
-    Blockchain* blockchain = NULL;
+    unsigned char s[7] = "antony";
 
-    if ((blockchain = (Blockchain*)malloc(sizeof(Blockchain*))) == NULL) {
-        fprintf(stderr, "%s\n", "Blockchain: unable to allocate memory");
-        exit(-1);
-    }  
+    set_transaction_details(transaction, *s);
 
-    blockchain__init(blockchain, block_index);
+    printf("%c", get_transaction_details(transaction));
 
-    printf("%d", blockchain->first_block->index);
 
-    printf("%d",block_index[0].index);
+
+
+    //Block* block_index = (Block*)malloc(100*sizeof(Block*));
+
+    //Blockchain* blockchain = NULL;
+
+    //if ((blockchain = (Blockchain*)malloc(sizeof(Blockchain*))) == NULL) {
+        //fprintf(stderr, "%s\n", "Blockchain: unable to allocate memory");
+        //exit(-1);
+    //}
+
+    //blockchain__init(blockchain, block_index);
+
+    //printf("%d", blockchain->first_block->index);
+
+    //printf("%d",block_index[0].index);
 
 
 

@@ -10,7 +10,7 @@ struct s_Block{
     time_t          timestamp;
     BYTE            last_hash;
     short           nb_transactions;
-    Transaction*    transactions;
+    Transaction     transactions;
     BYTE            merklel_root_hash;
     BYTE            current_hash;
     short           nonce;
