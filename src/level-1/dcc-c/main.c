@@ -53,9 +53,9 @@ int main(int argc, const char* argv[]) {
 
     Transaction transaction = newTransaction();
 
-    unsigned char s[7] = "antony";
+    BYTE s = NULL;
 
-    set_transaction_details(transaction, *s);
+    set_transaction_details(transaction, s);
 
     printf("%c", get_transaction_details(transaction));
 

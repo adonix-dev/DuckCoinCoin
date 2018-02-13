@@ -9,3 +9,5 @@
 #include "Transaction.h"
 
 typedef struct s_Block *Block;
+
+Block newBlock();
