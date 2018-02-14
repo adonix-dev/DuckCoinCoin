@@ -4,7 +4,7 @@
 
 #pragma once
 
-#include "./c-lib/sha256/sha256_utils.h"
+#include "../c-lib/sha256/sha256_utils.h"
 #include "Block.h"
 
 typedef struct s_Blockchain *Blockchain;

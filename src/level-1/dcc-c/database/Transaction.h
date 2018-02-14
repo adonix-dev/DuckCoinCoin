@@ -6,7 +6,7 @@
 
 #include <stdbool.h>
 #include <stdlib.h>
-#include "./c-lib/sha256/sha256_utils.h"
+#include "../c-lib/sha256/sha256_utils.h"
 
 typedef struct s_Transaction* Transaction;
 

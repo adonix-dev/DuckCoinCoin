@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-#include "Transaction.h"
-#include "Block.h"
-#include "Blockchain.h"
+#include "database/Transaction.h"
+#include "database/Block.h"
+#include "database/Blockchain.h"
 
 /*
 

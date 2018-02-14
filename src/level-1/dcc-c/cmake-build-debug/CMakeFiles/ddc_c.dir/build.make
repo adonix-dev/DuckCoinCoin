@@ -129,76 +129,76 @@ CMakeFiles/ddc_c.dir/main.c.o.provides: CMakeFiles/ddc_c.dir/main.c.o.requires
 CMakeFiles/ddc_c.dir/main.c.o.provides.build: CMakeFiles/ddc_c.dir/main.c.o
 
 
-CMakeFiles/ddc_c.dir/Block.c.o: CMakeFiles/ddc_c.dir/flags.make
-CMakeFiles/ddc_c.dir/Block.c.o: ../Block.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/ddc_c.dir/Block.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddc_c.dir/Block.c.o   -c /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/Block.c
+CMakeFiles/ddc_c.dir/database/Block.c.o: CMakeFiles/ddc_c.dir/flags.make
+CMakeFiles/ddc_c.dir/database/Block.c.o: ../database/Block.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/ddc_c.dir/database/Block.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddc_c.dir/database/Block.c.o   -c /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/database/Block.c
 
-CMakeFiles/ddc_c.dir/Block.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddc_c.dir/Block.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/Block.c > CMakeFiles/ddc_c.dir/Block.c.i
+CMakeFiles/ddc_c.dir/database/Block.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddc_c.dir/database/Block.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/database/Block.c > CMakeFiles/ddc_c.dir/database/Block.c.i
 
-CMakeFiles/ddc_c.dir/Block.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddc_c.dir/Block.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/Block.c -o CMakeFiles/ddc_c.dir/Block.c.s
+CMakeFiles/ddc_c.dir/database/Block.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddc_c.dir/database/Block.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/database/Block.c -o CMakeFiles/ddc_c.dir/database/Block.c.s
 
-CMakeFiles/ddc_c.dir/Block.c.o.requires:
+CMakeFiles/ddc_c.dir/database/Block.c.o.requires:
 
-.PHONY : CMakeFiles/ddc_c.dir/Block.c.o.requires
+.PHONY : CMakeFiles/ddc_c.dir/database/Block.c.o.requires
 
-CMakeFiles/ddc_c.dir/Block.c.o.provides: CMakeFiles/ddc_c.dir/Block.c.o.requires
-	$(MAKE) -f CMakeFiles/ddc_c.dir/build.make CMakeFiles/ddc_c.dir/Block.c.o.provides.build
-.PHONY : CMakeFiles/ddc_c.dir/Block.c.o.provides
+CMakeFiles/ddc_c.dir/database/Block.c.o.provides: CMakeFiles/ddc_c.dir/database/Block.c.o.requires
+	$(MAKE) -f CMakeFiles/ddc_c.dir/build.make CMakeFiles/ddc_c.dir/database/Block.c.o.provides.build
+.PHONY : CMakeFiles/ddc_c.dir/database/Block.c.o.provides
 
-CMakeFiles/ddc_c.dir/Block.c.o.provides.build: CMakeFiles/ddc_c.dir/Block.c.o
-
-
-CMakeFiles/ddc_c.dir/Transaction.c.o: CMakeFiles/ddc_c.dir/flags.make
-CMakeFiles/ddc_c.dir/Transaction.c.o: ../Transaction.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/ddc_c.dir/Transaction.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddc_c.dir/Transaction.c.o   -c /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/Transaction.c
-
-CMakeFiles/ddc_c.dir/Transaction.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddc_c.dir/Transaction.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/Transaction.c > CMakeFiles/ddc_c.dir/Transaction.c.i
-
-CMakeFiles/ddc_c.dir/Transaction.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddc_c.dir/Transaction.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/Transaction.c -o CMakeFiles/ddc_c.dir/Transaction.c.s
-
-CMakeFiles/ddc_c.dir/Transaction.c.o.requires:
-
-.PHONY : CMakeFiles/ddc_c.dir/Transaction.c.o.requires
-
-CMakeFiles/ddc_c.dir/Transaction.c.o.provides: CMakeFiles/ddc_c.dir/Transaction.c.o.requires
-	$(MAKE) -f CMakeFiles/ddc_c.dir/build.make CMakeFiles/ddc_c.dir/Transaction.c.o.provides.build
-.PHONY : CMakeFiles/ddc_c.dir/Transaction.c.o.provides
-
-CMakeFiles/ddc_c.dir/Transaction.c.o.provides.build: CMakeFiles/ddc_c.dir/Transaction.c.o
+CMakeFiles/ddc_c.dir/database/Block.c.o.provides.build: CMakeFiles/ddc_c.dir/database/Block.c.o
 
 
-CMakeFiles/ddc_c.dir/Blockchain.c.o: CMakeFiles/ddc_c.dir/flags.make
-CMakeFiles/ddc_c.dir/Blockchain.c.o: ../Blockchain.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/ddc_c.dir/Blockchain.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddc_c.dir/Blockchain.c.o   -c /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/Blockchain.c
+CMakeFiles/ddc_c.dir/database/Transaction.c.o: CMakeFiles/ddc_c.dir/flags.make
+CMakeFiles/ddc_c.dir/database/Transaction.c.o: ../database/Transaction.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/ddc_c.dir/database/Transaction.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddc_c.dir/database/Transaction.c.o   -c /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/database/Transaction.c
 
-CMakeFiles/ddc_c.dir/Blockchain.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddc_c.dir/Blockchain.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/Blockchain.c > CMakeFiles/ddc_c.dir/Blockchain.c.i
+CMakeFiles/ddc_c.dir/database/Transaction.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddc_c.dir/database/Transaction.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/database/Transaction.c > CMakeFiles/ddc_c.dir/database/Transaction.c.i
 
-CMakeFiles/ddc_c.dir/Blockchain.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddc_c.dir/Blockchain.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/Blockchain.c -o CMakeFiles/ddc_c.dir/Blockchain.c.s
+CMakeFiles/ddc_c.dir/database/Transaction.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddc_c.dir/database/Transaction.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/database/Transaction.c -o CMakeFiles/ddc_c.dir/database/Transaction.c.s
 
-CMakeFiles/ddc_c.dir/Blockchain.c.o.requires:
+CMakeFiles/ddc_c.dir/database/Transaction.c.o.requires:
 
-.PHONY : CMakeFiles/ddc_c.dir/Blockchain.c.o.requires
+.PHONY : CMakeFiles/ddc_c.dir/database/Transaction.c.o.requires
 
-CMakeFiles/ddc_c.dir/Blockchain.c.o.provides: CMakeFiles/ddc_c.dir/Blockchain.c.o.requires
-	$(MAKE) -f CMakeFiles/ddc_c.dir/build.make CMakeFiles/ddc_c.dir/Blockchain.c.o.provides.build
-.PHONY : CMakeFiles/ddc_c.dir/Blockchain.c.o.provides
+CMakeFiles/ddc_c.dir/database/Transaction.c.o.provides: CMakeFiles/ddc_c.dir/database/Transaction.c.o.requires
+	$(MAKE) -f CMakeFiles/ddc_c.dir/build.make CMakeFiles/ddc_c.dir/database/Transaction.c.o.provides.build
+.PHONY : CMakeFiles/ddc_c.dir/database/Transaction.c.o.provides
 
-CMakeFiles/ddc_c.dir/Blockchain.c.o.provides.build: CMakeFiles/ddc_c.dir/Blockchain.c.o
+CMakeFiles/ddc_c.dir/database/Transaction.c.o.provides.build: CMakeFiles/ddc_c.dir/database/Transaction.c.o
+
+
+CMakeFiles/ddc_c.dir/database/Blockchain.c.o: CMakeFiles/ddc_c.dir/flags.make
+CMakeFiles/ddc_c.dir/database/Blockchain.c.o: ../database/Blockchain.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/ddc_c.dir/database/Blockchain.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/ddc_c.dir/database/Blockchain.c.o   -c /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/database/Blockchain.c
+
+CMakeFiles/ddc_c.dir/database/Blockchain.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ddc_c.dir/database/Blockchain.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/database/Blockchain.c > CMakeFiles/ddc_c.dir/database/Blockchain.c.i
+
+CMakeFiles/ddc_c.dir/database/Blockchain.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ddc_c.dir/database/Blockchain.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/database/Blockchain.c -o CMakeFiles/ddc_c.dir/database/Blockchain.c.s
+
+CMakeFiles/ddc_c.dir/database/Blockchain.c.o.requires:
+
+.PHONY : CMakeFiles/ddc_c.dir/database/Blockchain.c.o.requires
+
+CMakeFiles/ddc_c.dir/database/Blockchain.c.o.provides: CMakeFiles/ddc_c.dir/database/Blockchain.c.o.requires
+	$(MAKE) -f CMakeFiles/ddc_c.dir/build.make CMakeFiles/ddc_c.dir/database/Blockchain.c.o.provides.build
+.PHONY : CMakeFiles/ddc_c.dir/database/Blockchain.c.o.provides
+
+CMakeFiles/ddc_c.dir/database/Blockchain.c.o.provides.build: CMakeFiles/ddc_c.dir/database/Blockchain.c.o
 
 
 # Object files for target ddc_c
@@ -206,9 +206,9 @@ ddc_c_OBJECTS = \
 "CMakeFiles/ddc_c.dir/c-lib/sha256/sha256.c.o" \
 "CMakeFiles/ddc_c.dir/c-lib/sha256/sha256_utils.c.o" \
 "CMakeFiles/ddc_c.dir/main.c.o" \
-"CMakeFiles/ddc_c.dir/Block.c.o" \
-"CMakeFiles/ddc_c.dir/Transaction.c.o" \
-"CMakeFiles/ddc_c.dir/Blockchain.c.o"
+"CMakeFiles/ddc_c.dir/database/Block.c.o" \
+"CMakeFiles/ddc_c.dir/database/Transaction.c.o" \
+"CMakeFiles/ddc_c.dir/database/Blockchain.c.o"
 
 # External object files for target ddc_c
 ddc_c_EXTERNAL_OBJECTS =
@@ -216,9 +216,9 @@ ddc_c_EXTERNAL_OBJECTS =
 ddc_c: CMakeFiles/ddc_c.dir/c-lib/sha256/sha256.c.o
 ddc_c: CMakeFiles/ddc_c.dir/c-lib/sha256/sha256_utils.c.o
 ddc_c: CMakeFiles/ddc_c.dir/main.c.o
-ddc_c: CMakeFiles/ddc_c.dir/Block.c.o
-ddc_c: CMakeFiles/ddc_c.dir/Transaction.c.o
-ddc_c: CMakeFiles/ddc_c.dir/Blockchain.c.o
+ddc_c: CMakeFiles/ddc_c.dir/database/Block.c.o
+ddc_c: CMakeFiles/ddc_c.dir/database/Transaction.c.o
+ddc_c: CMakeFiles/ddc_c.dir/database/Blockchain.c.o
 ddc_c: CMakeFiles/ddc_c.dir/build.make
 ddc_c: CMakeFiles/ddc_c.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable ddc_c"
@@ -232,9 +232,9 @@ CMakeFiles/ddc_c.dir/build: ddc_c
 CMakeFiles/ddc_c.dir/requires: CMakeFiles/ddc_c.dir/c-lib/sha256/sha256.c.o.requires
 CMakeFiles/ddc_c.dir/requires: CMakeFiles/ddc_c.dir/c-lib/sha256/sha256_utils.c.o.requires
 CMakeFiles/ddc_c.dir/requires: CMakeFiles/ddc_c.dir/main.c.o.requires
-CMakeFiles/ddc_c.dir/requires: CMakeFiles/ddc_c.dir/Block.c.o.requires
-CMakeFiles/ddc_c.dir/requires: CMakeFiles/ddc_c.dir/Transaction.c.o.requires
-CMakeFiles/ddc_c.dir/requires: CMakeFiles/ddc_c.dir/Blockchain.c.o.requires
+CMakeFiles/ddc_c.dir/requires: CMakeFiles/ddc_c.dir/database/Block.c.o.requires
+CMakeFiles/ddc_c.dir/requires: CMakeFiles/ddc_c.dir/database/Transaction.c.o.requires
+CMakeFiles/ddc_c.dir/requires: CMakeFiles/ddc_c.dir/database/Blockchain.c.o.requires
 
 .PHONY : CMakeFiles/ddc_c.dir/requires
 

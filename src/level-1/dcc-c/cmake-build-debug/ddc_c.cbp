@@ -82,24 +82,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/Block.c">
-			<Option target="ddc_c"/>
-		</Unit>
-		<Unit filename="/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/Block.h">
-			<Option target="ddc_c"/>
-		</Unit>
-		<Unit filename="/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/Blockchain.c">
-			<Option target="ddc_c"/>
-		</Unit>
-		<Unit filename="/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/Blockchain.h">
-			<Option target="ddc_c"/>
-		</Unit>
-		<Unit filename="/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/Transaction.c">
-			<Option target="ddc_c"/>
-		</Unit>
-		<Unit filename="/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/Transaction.h">
-			<Option target="ddc_c"/>
-		</Unit>
 		<Unit filename="/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/c-lib/sha256/sha256.c">
 			<Option target="ddc_c"/>
 		</Unit>
@@ -110,6 +92,24 @@
 			<Option target="ddc_c"/>
 		</Unit>
 		<Unit filename="/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/c-lib/sha256/sha256_utils.h">
+			<Option target="ddc_c"/>
+		</Unit>
+		<Unit filename="/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/database/Block.c">
+			<Option target="ddc_c"/>
+		</Unit>
+		<Unit filename="/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/database/Block.h">
+			<Option target="ddc_c"/>
+		</Unit>
+		<Unit filename="/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/database/Blockchain.c">
+			<Option target="ddc_c"/>
+		</Unit>
+		<Unit filename="/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/database/Blockchain.h">
+			<Option target="ddc_c"/>
+		</Unit>
+		<Unit filename="/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/database/Transaction.c">
+			<Option target="ddc_c"/>
+		</Unit>
+		<Unit filename="/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/database/Transaction.h">
 			<Option target="ddc_c"/>
 		</Unit>
 		<Unit filename="/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/main.c">
