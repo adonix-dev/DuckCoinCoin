@@ -123,87 +123,6 @@ ddc_c/fast:
 	$(MAKE) -f CMakeFiles/ddc_c.dir/build.make CMakeFiles/ddc_c.dir/build
 .PHONY : ddc_c/fast
 
-Block.o: Block.c.o
-
-.PHONY : Block.o
-
-# target to build an object file
-Block.c.o:
-	$(MAKE) -f CMakeFiles/ddc_c.dir/build.make CMakeFiles/ddc_c.dir/Block.c.o
-.PHONY : Block.c.o
-
-Block.i: Block.c.i
-
-.PHONY : Block.i
-
-# target to preprocess a source file
-Block.c.i:
-	$(MAKE) -f CMakeFiles/ddc_c.dir/build.make CMakeFiles/ddc_c.dir/Block.c.i
-.PHONY : Block.c.i
-
-Block.s: Block.c.s
-
-.PHONY : Block.s
-
-# target to generate assembly for a file
-Block.c.s:
-	$(MAKE) -f CMakeFiles/ddc_c.dir/build.make CMakeFiles/ddc_c.dir/Block.c.s
-.PHONY : Block.c.s
-
-Blockchain.o: Blockchain.c.o
-
-.PHONY : Blockchain.o
-
-# target to build an object file
-Blockchain.c.o:
-	$(MAKE) -f CMakeFiles/ddc_c.dir/build.make CMakeFiles/ddc_c.dir/Blockchain.c.o
-.PHONY : Blockchain.c.o
-
-Blockchain.i: Blockchain.c.i
-
-.PHONY : Blockchain.i
-
-# target to preprocess a source file
-Blockchain.c.i:
-	$(MAKE) -f CMakeFiles/ddc_c.dir/build.make CMakeFiles/ddc_c.dir/Blockchain.c.i
-.PHONY : Blockchain.c.i
-
-Blockchain.s: Blockchain.c.s
-
-.PHONY : Blockchain.s
-
-# target to generate assembly for a file
-Blockchain.c.s:
-	$(MAKE) -f CMakeFiles/ddc_c.dir/build.make CMakeFiles/ddc_c.dir/Blockchain.c.s
-.PHONY : Blockchain.c.s
-
-Transaction.o: Transaction.c.o
-
-.PHONY : Transaction.o
-
-# target to build an object file
-Transaction.c.o:
-	$(MAKE) -f CMakeFiles/ddc_c.dir/build.make CMakeFiles/ddc_c.dir/Transaction.c.o
-.PHONY : Transaction.c.o
-
-Transaction.i: Transaction.c.i
-
-.PHONY : Transaction.i
-
-# target to preprocess a source file
-Transaction.c.i:
-	$(MAKE) -f CMakeFiles/ddc_c.dir/build.make CMakeFiles/ddc_c.dir/Transaction.c.i
-.PHONY : Transaction.c.i
-
-Transaction.s: Transaction.c.s
-
-.PHONY : Transaction.s
-
-# target to generate assembly for a file
-Transaction.c.s:
-	$(MAKE) -f CMakeFiles/ddc_c.dir/build.make CMakeFiles/ddc_c.dir/Transaction.c.s
-.PHONY : Transaction.c.s
-
 c-lib/sha256/sha256.o: c-lib/sha256/sha256.c.o
 
 .PHONY : c-lib/sha256/sha256.o
@@ -258,6 +177,87 @@ c-lib/sha256/sha256_utils.c.s:
 	$(MAKE) -f CMakeFiles/ddc_c.dir/build.make CMakeFiles/ddc_c.dir/c-lib/sha256/sha256_utils.c.s
 .PHONY : c-lib/sha256/sha256_utils.c.s
 
+database/Block.o: database/Block.c.o
+
+.PHONY : database/Block.o
+
+# target to build an object file
+database/Block.c.o:
+	$(MAKE) -f CMakeFiles/ddc_c.dir/build.make CMakeFiles/ddc_c.dir/database/Block.c.o
+.PHONY : database/Block.c.o
+
+database/Block.i: database/Block.c.i
+
+.PHONY : database/Block.i
+
+# target to preprocess a source file
+database/Block.c.i:
+	$(MAKE) -f CMakeFiles/ddc_c.dir/build.make CMakeFiles/ddc_c.dir/database/Block.c.i
+.PHONY : database/Block.c.i
+
+database/Block.s: database/Block.c.s
+
+.PHONY : database/Block.s
+
+# target to generate assembly for a file
+database/Block.c.s:
+	$(MAKE) -f CMakeFiles/ddc_c.dir/build.make CMakeFiles/ddc_c.dir/database/Block.c.s
+.PHONY : database/Block.c.s
+
+database/Blockchain.o: database/Blockchain.c.o
+
+.PHONY : database/Blockchain.o
+
+# target to build an object file
+database/Blockchain.c.o:
+	$(MAKE) -f CMakeFiles/ddc_c.dir/build.make CMakeFiles/ddc_c.dir/database/Blockchain.c.o
+.PHONY : database/Blockchain.c.o
+
+database/Blockchain.i: database/Blockchain.c.i
+
+.PHONY : database/Blockchain.i
+
+# target to preprocess a source file
+database/Blockchain.c.i:
+	$(MAKE) -f CMakeFiles/ddc_c.dir/build.make CMakeFiles/ddc_c.dir/database/Blockchain.c.i
+.PHONY : database/Blockchain.c.i
+
+database/Blockchain.s: database/Blockchain.c.s
+
+.PHONY : database/Blockchain.s
+
+# target to generate assembly for a file
+database/Blockchain.c.s:
+	$(MAKE) -f CMakeFiles/ddc_c.dir/build.make CMakeFiles/ddc_c.dir/database/Blockchain.c.s
+.PHONY : database/Blockchain.c.s
+
+database/Transaction.o: database/Transaction.c.o
+
+.PHONY : database/Transaction.o
+
+# target to build an object file
+database/Transaction.c.o:
+	$(MAKE) -f CMakeFiles/ddc_c.dir/build.make CMakeFiles/ddc_c.dir/database/Transaction.c.o
+.PHONY : database/Transaction.c.o
+
+database/Transaction.i: database/Transaction.c.i
+
+.PHONY : database/Transaction.i
+
+# target to preprocess a source file
+database/Transaction.c.i:
+	$(MAKE) -f CMakeFiles/ddc_c.dir/build.make CMakeFiles/ddc_c.dir/database/Transaction.c.i
+.PHONY : database/Transaction.c.i
+
+database/Transaction.s: database/Transaction.c.s
+
+.PHONY : database/Transaction.s
+
+# target to generate assembly for a file
+database/Transaction.c.s:
+	$(MAKE) -f CMakeFiles/ddc_c.dir/build.make CMakeFiles/ddc_c.dir/database/Transaction.c.s
+.PHONY : database/Transaction.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -294,21 +294,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ddc_c"
-	@echo "... Block.o"
-	@echo "... Block.i"
-	@echo "... Block.s"
-	@echo "... Blockchain.o"
-	@echo "... Blockchain.i"
-	@echo "... Blockchain.s"
-	@echo "... Transaction.o"
-	@echo "... Transaction.i"
-	@echo "... Transaction.s"
 	@echo "... c-lib/sha256/sha256.o"
 	@echo "... c-lib/sha256/sha256.i"
 	@echo "... c-lib/sha256/sha256.s"
 	@echo "... c-lib/sha256/sha256_utils.o"
 	@echo "... c-lib/sha256/sha256_utils.i"
 	@echo "... c-lib/sha256/sha256_utils.s"
+	@echo "... database/Block.o"
+	@echo "... database/Block.i"
+	@echo "... database/Block.s"
+	@echo "... database/Blockchain.o"
+	@echo "... database/Blockchain.i"
+	@echo "... database/Blockchain.s"
+	@echo "... database/Transaction.o"
+	@echo "... database/Transaction.i"
+	@echo "... database/Transaction.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

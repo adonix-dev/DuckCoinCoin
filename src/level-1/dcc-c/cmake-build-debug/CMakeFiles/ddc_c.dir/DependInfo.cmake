@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/Block.c" "/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/cmake-build-debug/CMakeFiles/ddc_c.dir/Block.c.o"
-  "/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/Blockchain.c" "/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/cmake-build-debug/CMakeFiles/ddc_c.dir/Blockchain.c.o"
-  "/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/Transaction.c" "/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/cmake-build-debug/CMakeFiles/ddc_c.dir/Transaction.c.o"
   "/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/c-lib/sha256/sha256.c" "/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/cmake-build-debug/CMakeFiles/ddc_c.dir/c-lib/sha256/sha256.c.o"
   "/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/c-lib/sha256/sha256_utils.c" "/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/cmake-build-debug/CMakeFiles/ddc_c.dir/c-lib/sha256/sha256_utils.c.o"
+  "/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/database/Block.c" "/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/cmake-build-debug/CMakeFiles/ddc_c.dir/database/Block.c.o"
+  "/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/database/Blockchain.c" "/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/cmake-build-debug/CMakeFiles/ddc_c.dir/database/Blockchain.c.o"
+  "/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/database/Transaction.c" "/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/cmake-build-debug/CMakeFiles/ddc_c.dir/database/Transaction.c.o"
   "/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/main.c" "/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/cmake-build-debug/CMakeFiles/ddc_c.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
