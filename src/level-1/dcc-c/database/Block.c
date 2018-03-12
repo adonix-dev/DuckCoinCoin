@@ -6,29 +6,34 @@
 
 struct s_Block{
 
-    short           index;
+    unsigned char   index;
     time_t          timestamp;
-    BYTE            last_hash;
-    short           nb_transactions;
-    Transaction     transactions;
-    BYTE            merklel_root_hash;
-    BYTE            current_hash;
-    short           nonce;
+    BYTE            last_hash[32];
+    unsigned char   nb_transactions;
+    Transactions    transactions;
+    BYTE            merklel_root_hash[32];
+    BYTE            current_hash[32];
+    unsigned char   nonce;
     struct Block*   next_block;
 
 };
 
-Block newBlock(){
+Block get_first_block(BYTE nb_of_transaction){
 
-    Block block = (Block)malloc(sizeof(Block));
+    Block block = (Block)malloc(sizeof(struct s_Block));
     block->index              = 1;
-    block->timestamp          = 0;
-    block->last_hash          = NULL;
+    block->timestamp          = time(NULL);
+    strcpy(block->last_hash, "Genesis");
     block->nb_transactions    = 0;
     block->transactions       = NULL;
-    block->merklel_root_hash  = NULL;
-    block->current_hash       = NULL;
-    block->nonce              = 0;
-    block->next_block         = NULL;
+    strcpy(block->merklel_root_hash, "merklel_root_hash");
+    strcpy(block->current_hash, "current_block_hash");
+    block->nonce = 0;
+    block->next_block = NULL;
 }
 
+Block new_block(Block last_block, unsigned char last_index){
+
+    return last_block;
+
+}

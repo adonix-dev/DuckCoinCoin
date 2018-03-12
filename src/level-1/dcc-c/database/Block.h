@@ -5,9 +5,14 @@
 #pragma once
 
 #include <time.h>
+#include <string.h>
 #include "../c-lib/sha256/sha256_utils.h"
 #include "Transaction.h"
 
 typedef struct s_Block *Block;
 
-Block newBlock();
+Block get_first_block(BYTE nb_of_transaction);
+
+Block new_block(Block last_block, unsigned char last_index);
+
+
