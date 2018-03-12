@@ -73,6 +73,8 @@ stdio.h
 -
 string.h
 -
+assert.h
+-
 ../c-lib/sha256/sha256_utils.h
 /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/c-lib/sha256/sha256_utils.h
 

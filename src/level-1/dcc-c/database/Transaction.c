@@ -15,16 +15,23 @@ typedef struct s_Transaction{
 
 struct s_Transactions{
 
-    Transaction* first;
+    Transaction* tail;
     size_t size;
 
 };
 
 Transactions transactions(){
     Transactions transactions = (Transactions)malloc(sizeof(struct s_Transactions));
-    transactions->first = NULL;
+    transactions->tail = NULL;
     transactions->size = 0;
     return transactions;
+}
+
+Transactions create_transactions(BYTE nb_transactions){
+
+    Transactions l_transaction = transactions();
+    for (int i = 0; i < nb_transactions; ++i) l_transaction = new(l_transaction);
+    return l_transaction;
 }
 
 Transactions new(Transactions t){
@@ -33,23 +40,18 @@ Transactions new(Transactions t){
     Transaction *tmp;
 
     BYTE transaction_details[STR_LENGTH + MAX_VALUE_LENGTH] = "Source-Destination :";
-    unsigned int random_exchage_value = (unsigned int)(rand()%(MAX_VALUE));
+    unsigned int random_exchange_value = (unsigned int)(rand()%(MAX_VALUE));
     BYTE buffer[STR_LENGTH + MAX_VALUE_LENGTH];
-    snprintf(buffer, sizeof(buffer), "%s %d", transaction_details,  random_exchage_value);
+    snprintf(buffer, sizeof(buffer), "%s %d", transaction_details,  random_exchange_value);
 
     stpcpy(new->details, buffer);
 
     new->next = NULL;
 
-    if(t->first == NULL){
-        t->first = new;
-        tmp = new;
-    }
-    else{
-        tmp->next = new;
-        tmp = new;
-    }
+    if(t->tail == NULL) t->tail = new;
+    else tmp->next = new;
 
+    tmp = new;
     ++(t->size);
 
     return t;
@@ -57,15 +59,15 @@ Transactions new(Transactions t){
 
 BYTE* get_transaction_info(Transactions t, BYTE index){
 
-    printf("%d\n", (int)t->size);
+    assert(index <= t->size);
+    assert(t->tail != NULL);
 
-    Transaction *tmp = t->first;
+    if(index <= t->size){
 
-    for(int i = 0; i < index; ++i){
-
-        printf("%s\n", tmp->details);
-        tmp = tmp->next;
-
+        Transaction *tmp = t->tail;
+        for(int i = 0; i < index-1; ++i) tmp = tmp->next;
+        return tmp->details;
     }
+    else fprintf(stderr, "transaction: Trying to access to a none allocated area");
 
 }

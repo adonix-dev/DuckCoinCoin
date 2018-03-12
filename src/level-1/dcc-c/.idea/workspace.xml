@@ -15,12 +15,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ddc_c.dir/C.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ddc_c.dir/C.includecache" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ddc_c.dir/database/Block.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ddc_c.dir/database/Block.c.o" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ddc_c.dir/database/Blockchain.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ddc_c.dir/database/Blockchain.c.o" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ddc_c.dir/database/Transaction.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ddc_c.dir/database/Transaction.c.o" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ddc_c.dir/main.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ddc_c.dir/main.c.o" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/ddc_c" afterPath="$PROJECT_DIR$/cmake-build-debug/ddc_c" />
-      <change beforePath="$PROJECT_DIR$/database/Block.c" afterPath="$PROJECT_DIR$/database/Block.c" />
-      <change beforePath="$PROJECT_DIR$/database/Block.h" afterPath="$PROJECT_DIR$/database/Block.h" />
       <change beforePath="$PROJECT_DIR$/database/Transaction.c" afterPath="$PROJECT_DIR$/database/Transaction.c" />
       <change beforePath="$PROJECT_DIR$/database/Transaction.h" afterPath="$PROJECT_DIR$/database/Transaction.h" />
       <change beforePath="$PROJECT_DIR$/main.c" afterPath="$PROJECT_DIR$/main.c" />
@@ -50,10 +47,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Block.c" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Block.c" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/database/Block.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="198">
+                <state relative-caret-position="270">
                   <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
                   <folding />
                 </state>
@@ -72,11 +69,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Transaction.h" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Transaction.h" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/database/Transaction.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+                <state relative-caret-position="210">
+                  <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
                   <folding>
                     <element signature="e#63#83#0" expanded="true" />
                   </folding>
@@ -91,8 +88,8 @@
           <file leaf-file-name="main.c" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/main.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="314">
-                  <caret line="66" column="38" lean-forward="true" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="38" />
+                <state relative-caret-position="327">
+                  <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#18#0" expanded="true" />
                   </folding>
@@ -100,21 +97,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Transaction.c" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Transaction.c" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/database/Transaction.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="361">
-                  <caret line="48" column="20" lean-forward="false" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
+                <state relative-caret-position="321">
+                  <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Blockchain.c" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Blockchain.c" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/database/Blockchain.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+                <state relative-caret-position="0">
+                  <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -145,9 +142,9 @@
         <option value="$PROJECT_DIR$/helpers/length_helper.h" />
         <option value="$PROJECT_DIR$/database/Block.c" />
         <option value="$PROJECT_DIR$/database/Block.h" />
+        <option value="$PROJECT_DIR$/database/Transaction.c" />
         <option value="$PROJECT_DIR$/main.c" />
         <option value="$PROJECT_DIR$/database/Transaction.h" />
-        <option value="$PROJECT_DIR$/database/Transaction.c" />
       </list>
     </option>
   </component>
@@ -258,12 +255,12 @@
       <workItem from="1518811719985" duration="709000" />
       <workItem from="1519303310672" duration="1651000" />
       <workItem from="1520786384746" duration="228000" />
-      <workItem from="1520786789457" duration="32050000" />
+      <workItem from="1520786789457" duration="36594000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71252000" />
+    <option name="totallyTimeSpent" value="75796000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="807" extended-state="0" />
@@ -682,24 +679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/Transaction.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="48" column="20" lean-forward="false" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/Transaction.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-          <folding>
-            <element signature="e#63#83#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/Blockchain.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -720,28 +699,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/database/Block.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/Blockchain.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="66" column="38" lean-forward="true" selection-start-line="66" selection-start-column="38" selection-end-line="66" selection-end-column="38" />
+        <state relative-caret-position="327">
+          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/Blockchain.c">
+    <entry file="file://$PROJECT_DIR$/database/Transaction.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="210">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding>
+            <element signature="e#63#83#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/Block.c">
+    <entry file="file://$PROJECT_DIR$/database/Transaction.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="321">
+          <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
           <folding />
         </state>
       </provider>
