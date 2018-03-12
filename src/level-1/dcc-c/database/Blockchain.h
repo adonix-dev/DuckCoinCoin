@@ -8,3 +8,7 @@
 #include "Block.h"
 
 typedef struct s_Blockchain *Blockchain;
+
+Blockchain __construct(Blockchain blockchain, unsigned char difficulty);
+
+unsigned char  get_difficulty(Blockchain blockchain);

@@ -41,6 +41,8 @@ Block.h
 /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/database/Block.h
 time.h
 -
+string.h
+-
 ../c-lib/sha256/sha256_utils.h
 /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/c-lib/sha256/sha256_utils.h
 Transaction.h
@@ -64,6 +66,14 @@ Transaction.h
 stdbool.h
 -
 stdlib.h
+-
+time.h
+-
+stdio.h
+-
+string.h
+-
+assert.h
 -
 ../c-lib/sha256/sha256_utils.h
 /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/dcc-c/c-lib/sha256/sha256_utils.h

@@ -51,14 +51,12 @@ int main(int argc, const char* argv[]) {
 
     printf("Hello, World!\n");
 
-    Transaction transaction = newTransaction();
+    //int nb_transaction = 8;
+    srand((unsigned int)time(NULL));
 
-    BYTE s = NULL;
+    Transactions transactions = create_transactions(8);
 
-    set_transaction_details(transaction, s);
-
-    printf("%c", get_transaction_details(transaction));
-
+    printf("%s", get_transaction_info(transactions, 6));
 
 
 
