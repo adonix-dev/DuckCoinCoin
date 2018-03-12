@@ -4,39 +4,68 @@
 
 
 #include "Transaction.h"
+#define STR_LENGTH 22
+
+typedef struct s_Transaction{
+
+    BYTE details[STR_LENGTH + MAX_VALUE_LENGTH]; //"Source-Destination : RAND_VALUE"
+    struct s_Transaction *next;
+
+} Transaction;
 
 struct s_Transactions{
 
-    BYTE details[22 + sizeof(MAX_VALUE)]; //"Source-Destination : RAND_VALUE"
-    Transactions next_transaction;
+    Transaction* first;
+    size_t size;
 
 };
 
-Transactions set_next_transaction(Transactions transactions){
-
-    Transactions new_transactions = malloc(sizeof(struct s_Transactions));
-    new_transactions->next_transaction  = NULL;
-
-    transactions->next_transaction = new_transactions;
-
+Transactions transactions(){
+    Transactions transactions = (Transactions)malloc(sizeof(struct s_Transactions));
+    transactions->first = NULL;
+    transactions->size = 0;
+    return transactions;
 }
 
-void set_transaction_details(Transactions transactions) {
+Transactions new(Transactions t){
 
-    BYTE transaction_details[22 + sizeof(MAX_VALUE)] = "Source-Destination :";
+    Transaction *new = malloc(sizeof(Transaction));
+    Transaction *tmp;
 
-    srand((unsigned int)time(NULL));
+    BYTE transaction_details[STR_LENGTH + MAX_VALUE_LENGTH] = "Source-Destination :";
     unsigned int random_exchage_value = (unsigned int)(rand()%(MAX_VALUE));
+    BYTE buffer[STR_LENGTH + MAX_VALUE_LENGTH];
+    snprintf(buffer, sizeof(buffer), "%s %d", transaction_details,  random_exchage_value);
 
-    BYTE buffer[22 + sizeof(MAX_VALUE)];
-    snprintf(buffer, sizeof(buffer), "%s %d\0", transaction_details,  random_exchage_value);
+    stpcpy(new->details, buffer);
 
-    strcpy(transactions->details, buffer);
+    new->next = NULL;
 
+    if(t->first == NULL){
+        t->first = new;
+        tmp = new;
+    }
+    else{
+        tmp->next = new;
+        tmp = new;
+    }
+
+    ++(t->size);
+
+    return t;
 }
 
-BYTE* get_transaction_details(Transactions transactions){
+BYTE* get_transaction_info(Transactions t, BYTE index){
 
-    return transactions->details;
+    printf("%d\n", (int)t->size);
+
+    Transaction *tmp = t->first;
+
+    for(int i = 0; i < index; ++i){
+
+        printf("%s\n", tmp->details);
+        tmp = tmp->next;
+
+    }
 
 }

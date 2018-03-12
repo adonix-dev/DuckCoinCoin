@@ -4,6 +4,7 @@
 
 #include "Block.h"
 
+
 struct s_Block{
 
     unsigned char   index;
@@ -32,7 +33,7 @@ Block get_first_block(BYTE nb_of_transaction){
     block->next_block = NULL;
 }
 
-Block new_block(Block last_block, unsigned char last_index){
+Block new_block(Block last_block){
 
 
    //

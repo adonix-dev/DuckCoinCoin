@@ -11,12 +11,13 @@
 #include <string.h>
 #include "../c-lib/sha256/sha256_utils.h"
 
-#define MAX_VALUE 1000
+#define MAX_VALUE 100000
+#define MAX_VALUE_LENGTH 6
 
 typedef struct s_Transactions* Transactions;
 
-Transactions new_transaction();
+Transactions transactions();
 
-void set_transaction_details(Transactions transaction);
+Transactions new(Transactions t);
 
-BYTE* get_transaction_details(Transactions transaction);
+BYTE* get_transaction_info(Transactions t, BYTE index);

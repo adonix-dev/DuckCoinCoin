@@ -13,6 +13,6 @@ typedef struct s_Block *Block;
 
 Block get_first_block(BYTE nb_of_transaction);
 
-Block new_block(Block last_block, unsigned char last_index);
+Block new_block(Block last_block);
 
 
