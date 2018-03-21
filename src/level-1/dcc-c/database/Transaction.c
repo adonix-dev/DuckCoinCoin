@@ -9,7 +9,7 @@
 typedef struct s_Transaction{
 
     BYTE details[STR_LENGTH + MAX_VALUE_LENGTH]; //"Source-Destination : RAND_VALUE"
-    struct s_Transaction *next;
+    struct s_Transaction* next;
 
 } Transaction;
 
@@ -26,15 +26,17 @@ Transactions transactions(){
     transactions->size = 0;
     return transactions;
 }
-
+/*
 Transactions create_transactions(BYTE nb_transactions){
 
+    srand((unsigned int)time(NULL));
     Transactions l_transaction = transactions();
-    for (int i = 0; i < nb_transactions; ++i) l_transaction = new(l_transaction);
+    for (int i = 0; i < nb_transactions; ++i) l_transaction = new_transaction(l_transaction);
     return l_transaction;
 }
+*/
+Transactions new_transaction(Transactions t){
 
-Transactions new(Transactions t){
 
     Transaction *new = malloc(sizeof(Transaction));
     Transaction *tmp;
@@ -65,7 +67,7 @@ BYTE* get_transaction_info(Transactions t, BYTE index){
     if(index <= t->size){
 
         Transaction *tmp = t->tail;
-        for(int i = 0; i < index-1; ++i) tmp = tmp->next;
+        for(int i = 0; i < index; ++i) tmp = tmp->next;
         return tmp->details;
     }
     else fprintf(stderr, "transaction: Trying to access to a none allocated area");

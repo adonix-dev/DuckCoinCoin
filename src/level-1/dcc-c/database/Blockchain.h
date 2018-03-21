@@ -9,6 +9,6 @@
 
 typedef struct s_Blockchain *Blockchain;
 
-Blockchain __construct(Blockchain blockchain, unsigned char difficulty);
+Blockchain blockchain(unsigned char difficulty);;
 
 unsigned char  get_difficulty(Blockchain blockchain);

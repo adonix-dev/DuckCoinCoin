@@ -6,7 +6,7 @@
 
 struct s_Blockchain{
 
-    Block* first_block;
+    Blocks* first_block;
 
     unsigned char difficulty;
 
@@ -14,12 +14,10 @@ struct s_Blockchain{
 
 };
 
-Blockchain __construct(Blockchain blockchain, unsigned char difficulty){
-
-    //initaliser les attributs
-    blockchain->chain_size = 1;
-    return blockchain;
-
+Blockchain blockchain(unsigned char difficulty){
+    Blockchain b = malloc(sizeof(struct s_Blockchain));
+    b->chain_size = 1;
+    return b;
 }
 
 unsigned char get_difficulty(Blockchain blockchain){
