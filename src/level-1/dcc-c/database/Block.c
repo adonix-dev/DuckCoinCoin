@@ -42,6 +42,7 @@ Blocks new_block(Blocks b){
     new_block->timestamp = time(NULL);
     strcpy(new_block->last_hash, "Genesis");
     new_block->nb_transactions    = 0;
+    new_block->transactions = transactions();
     strcpy(new_block->merklel_root_hash, "merklel_root_hash");
     strcpy(new_block->current_hash, "current_block_hash");
     new_block->nonce = 0;
@@ -56,11 +57,38 @@ Blocks new_block(Blocks b){
     return b;
 }
 
-BYTE* get_block_info(Transactions t, BYTE index){
+BYTE* get_block_info(Blocks b, BYTE index){
+
+    assert(index <= b->size);
+    assert(b->tail != NULL);
+
+    if(index <= b->size) {
+
+        Block *tmp = b->tail;
+        for (int i = 0; i < index; ++i) tmp = tmp->next_block;
+        return tmp->last_hash;
+    }
+    else fprintf(stderr, "transaction: Trying to access to a none allocated area");
 
 }
 
 
+/*
+ BYTE* get_transaction_info(Transactions t, BYTE index){
+
+    assert(index <= t->size);
+    assert(t->tail != NULL);
+
+    if(index <= t->size){
+
+        Transaction *tmp = t->tail;
+        for(int i = 0; i < index; ++i) tmp = tmp->next;
+        return tmp->details;
+    }
+    else fprintf(stderr, "transaction: Trying to access to a none allocated area");
+
+}
+ */
 /*
 Blocks get_first_block(BYTE nb_of_transaction){
 

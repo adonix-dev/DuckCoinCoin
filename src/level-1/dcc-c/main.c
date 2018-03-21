@@ -71,7 +71,7 @@ int main(int argc, const char* argv[]) {
         l_blocks = new_block(l_blocks);
 
 
-    for(int i = 0; i<5; ++i) {
+    for(int i = 0; i<1; ++i) {
         printf("%s\n", get_block_info(l_blocks, i));
     }
 

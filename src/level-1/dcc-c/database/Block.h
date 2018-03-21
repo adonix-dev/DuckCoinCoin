@@ -20,4 +20,4 @@ Blocks blocks();
 
 Blocks new_block(Blocks b);
 
-BYTE* get_block_info(Transactions t, BYTE index);
+BYTE* get_block_info(Blocks b, BYTE index);
