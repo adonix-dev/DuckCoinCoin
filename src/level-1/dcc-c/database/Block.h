@@ -6,13 +6,17 @@
 
 #include <time.h>
 #include <string.h>
+#include <stdlib.h> //for malloc
 #include "../c-lib/sha256/sha256_utils.h"
 #include "Transaction.h"
 
-typedef struct s_Block *Block;
+typedef struct s_Blocks* Blocks;
 
-Block get_first_block(BYTE nb_of_transaction);
+Blocks blocks();
 
-Block new_block(Block last_block);
+Blocks new_block(Blocks b);
 
-
+/*
+ * DEBUG FUNCTION
+ */
+BYTE* get_block_info(Blocks b, BYTE index);

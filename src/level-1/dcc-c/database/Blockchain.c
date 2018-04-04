@@ -6,22 +6,27 @@
 
 struct s_Blockchain{
 
-    Block* first_block;
+    Blocks first_block;
 
-    unsigned char difficulty;
+    BYTE difficulty;
 
     size_t chain_size;
 
 };
 
-Blockchain __construct(Blockchain blockchain, unsigned char difficulty){
-
-    //initaliser les attributs
-    blockchain->chain_size = 1;
-    return blockchain;
-
+Blockchain blockchain(BYTE difficulty){
+    Blockchain b = malloc(sizeof(struct s_Blockchain));
+    b->first_block = blocks();
+    b->chain_size = 1;
+    return b;
 }
 
-unsigned char get_difficulty(Blockchain blockchain){
+BYTE get_difficulty(Blockchain blockchain){
     return blockchain->difficulty;
 }
+
+/*
+ * Choisir le nombre de block crée
+ * La difficulté
+ * Le nombre max de transaction par block
+ */

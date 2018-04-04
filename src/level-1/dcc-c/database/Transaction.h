@@ -4,23 +4,22 @@
 
 #pragma once
 
-#include <stdbool.h>
-#include <stdlib.h>
+#include <stdlib.h> //for malloc
+#include <stdio.h>  //for snprintf et fprintf
+#include <string.h> //for stpcpy
+#include <assert.h> //for assert
+#include "../c-lib/sha256/sha256_utils.h" //for BYTE type import
 #include <time.h>
-#include <stdio.h>
-#include <string.h>
-#include <assert.h>
-#include "../c-lib/sha256/sha256_utils.h"
+#include <unistd.h>
 
-#define MAX_VALUE 1000
-#define MAX_VALUE_LENGTH 4
+#define MAX_VALUE 1000      //max transaction amount
+#define MAX_VALUE_LENGTH 4  //length of MAX_VALUE
 
-typedef struct s_Transactions* Transactions;
+typedef struct s_Transactions* Transactions; //Opaque struct transactions
 
-Transactions transactions();
+Transactions transactions();                 //Creation d'une chaine de transaction
 
-Transactions create_transactions(BYTE nb_transactions);
+Transactions new_transaction(Transactions t);   //Ajout d'un transaction à la chaine
 
-Transactions new(Transactions t);
+BYTE* get_transaction_info(Transactions t, BYTE index); //Retourne les details de la transaction
 
-BYTE* get_transaction_info(Transactions t, BYTE index);

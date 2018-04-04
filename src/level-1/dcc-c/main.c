@@ -52,11 +52,50 @@ int main(int argc, const char* argv[]) {
     printf("Hello, World!\n");
 
     //int nb_transaction = 8;
+
+    //Transactions transaction = create_transactions(8);
+
     srand((unsigned int)time(NULL));
 
-    Transactions transactions = create_transactions(8);
+    Transactions l_transactions = transactions();
 
-    printf("%s", get_transaction_info(transactions, 6));
+    for (int i = 0; i < 5; ++i)
+        l_transactions = new_transaction(l_transactions);
+
+    for(int i = 0; i<5; ++i) {
+        printf("%s\n", get_transaction_info(l_transactions, i));
+    }
+
+    Blocks l_blocks = blocks();
+
+    for (int i = 0; i < 5; ++i)
+        l_blocks = new_block(l_blocks);
+
+
+    //for(int i = 0; i<5; ++i) {
+       // printf("%d\n", get)
+
+    printf("%s\n", get_block_info(l_blocks, 1));
+    //}
+
+
+    //BYTE* str = get_transaction_info(transactions, 3);
+    //char hashRes[SHA256_BLOCK_SIZE*2 + 1];
+
+    //printf("---%s\n", str);
+    /*
+    for(int i = 0; i<100000000; ++i){
+
+        BYTE transaction_details[20] = "a";
+        BYTE buffer[20];
+        snprintf(buffer, sizeof(buffer), "%s %d", transaction_details, i);
+
+        sha256ofString(buffer, hashRes);
+        if(hashRes[0] == '0' && hashRes[1] == '0' && hashRes[2] == '0' && hashRes[3] == '0' && hashRes[4] == '0'){
+            printf("---%s\n", hashRes);
+        }
+    }*/
+    //sha256ofString(str, hashRes);
 
 
 
