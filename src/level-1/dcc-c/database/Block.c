@@ -6,14 +6,14 @@
 
 typedef struct s_Block{
 
-    unsigned char   index;
+    BYTE            index;
     time_t          timestamp;
     BYTE            last_hash[32];
-    unsigned char   nb_transactions;
+    BYTE            nb_transactions;
     Transactions    transactions;
     BYTE            merklel_root_hash[32];
     BYTE            current_hash[32];
-    unsigned char   nonce;
+    BYTE            nonce;
     struct s_Block* next_block;
 
 } Block;
@@ -48,15 +48,26 @@ Blocks new_block(Blocks b){
     new_block->nonce = 0;
     new_block->next_block = NULL;
 
-    if(b->tail == NULL) b->tail = new_block;
-    else tmp->next_block = new_block;
+    if(b->tail == NULL){
+        b->tail = new_block;
+    }
+    else{
+        BYTE index_tmp = tmp->index;
+        new_block->index = tmp->index + (BYTE)1;
+        tmp->next_block = new_block;
+    }
 
     tmp = new_block;
+
     ++(b->size);
 
     return b;
 }
 
+
+/*
+ * DEBUG FUNCTION
+ */
 BYTE* get_block_info(Blocks b, BYTE index){
 
     assert(index <= b->size);
@@ -66,7 +77,7 @@ BYTE* get_block_info(Blocks b, BYTE index){
 
         Block *tmp = b->tail;
         for (int i = 0; i < index; ++i) tmp = tmp->next_block;
-        return tmp->last_hash;
+        return tmp->merklel_root_hash;
     }
     else fprintf(stderr, "transaction: Trying to access to a none allocated area");
 

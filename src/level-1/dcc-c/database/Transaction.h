@@ -17,10 +17,9 @@
 
 typedef struct s_Transactions* Transactions; //Opaque struct transactions
 
-Transactions transactions();                 //
+Transactions transactions();                 //Creation d'une chaine de transaction
 
-//Transactions create_transactions(BYTE nb_transactions);
+Transactions new_transaction(Transactions t);   //Ajout d'un transaction à la chaine
 
-Transactions new_transaction(Transactions t);
+BYTE* get_transaction_info(Transactions t, BYTE index); //Retourne les details de la transaction
 
-BYTE* get_transaction_info(Transactions t, BYTE index);

@@ -12,12 +12,11 @@
 
 typedef struct s_Blocks* Blocks;
 
-//Blocks get_first_block(BYTE nb_of_transaction);
-
-//Blocks new_block(Blocks last_block);
-
 Blocks blocks();
 
 Blocks new_block(Blocks b);
 
+/*
+ * DEBUG FUNCTION
+ */
 BYTE* get_block_info(Blocks b, BYTE index);

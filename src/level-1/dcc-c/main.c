@@ -57,25 +57,26 @@ int main(int argc, const char* argv[]) {
 
     srand((unsigned int)time(NULL));
 
-    Transactions l_transaction = transactions();
+    Transactions l_transactions = transactions();
 
     for (int i = 0; i < 5; ++i)
-        l_transaction = new_transaction(l_transaction);
+        l_transactions = new_transaction(l_transactions);
 
     for(int i = 0; i<5; ++i) {
-        printf("%s\n", get_transaction_info(l_transaction, i));
+        printf("%s\n", get_transaction_info(l_transactions, i));
     }
 
     Blocks l_blocks = blocks();
+
     for (int i = 0; i < 5; ++i)
         l_blocks = new_block(l_blocks);
 
 
-    for(int i = 0; i<1; ++i) {
-        printf("%s\n", get_block_info(l_blocks, i));
-    }
+    //for(int i = 0; i<5; ++i) {
+       // printf("%d\n", get)
 
-
+    printf("%s\n", get_block_info(l_blocks, 1));
+    //}
 
 
     //BYTE* str = get_transaction_info(transactions, 3);

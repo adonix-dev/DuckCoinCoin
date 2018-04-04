@@ -73,3 +73,29 @@ BYTE* get_transaction_info(Transactions t, BYTE index){
     else fprintf(stderr, "transaction: Trying to access to a none allocated area");
 
 }
+
+BYTE* hash_two_string(BYTE* A, BYTE* B){
+
+    BYTE output[SHA256_BLOCK_SIZE];
+    snprintf(output, SHA256_BLOCK_SIZE, "%s %%", A, B);
+    return output;
+
+}
+
+Transaction get_easy_transaction_table(Transactions t){
+
+    Transaction easy_transaction_table[t->size];
+    Transaction *tmp = t->tail;
+
+    for (int i = 0; i < t->size; ++i) {
+        easy_transaction_table[i] = *tmp;
+        tmp = tmp->next;
+    }
+
+    for (int j = 0; j < t->size; ++j) {
+        printf("%s\n", easy_transaction_table[j].details);
+    }
+
+    return *easy_transaction_table;
+}
+
