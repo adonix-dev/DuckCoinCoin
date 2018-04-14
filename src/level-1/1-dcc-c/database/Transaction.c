@@ -42,10 +42,10 @@ void clear_transactions(transacPtr* transactions){
 			free(transaction->next);
 			transaction = tmp;
 
-		} while (transaction != (*transactions)->sentinel->previous);
+		} while (transaction != (*transactions)->sentinel);
 	//}
 	//else free((*transactions)->sentinel->next);
-
+    free(*transactions);
     *transactions = NULL;
 }
 
@@ -71,6 +71,7 @@ Transactions* new_transaction(Transactions* t){
 
     ++(t->size);
 
+    return t;
 }
 
 /*-----------------------------------------------------------------*/
@@ -87,7 +88,7 @@ Transactions* create_transaction(int nb_transaction){
 
     Transactions* t = transactions();
 
-    while (--nb_transaction+1) new_transaction(t);
+    //while (--nb_transaction+1) new_transaction(t);
 
     return t;
 }

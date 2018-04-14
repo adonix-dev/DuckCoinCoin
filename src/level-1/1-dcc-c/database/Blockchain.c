@@ -45,6 +45,15 @@ Blockchain* blockchain(int max_transaction, BYTE difficulty){
 }
 /*-----------------------------------------------------------------*/
 
+Blockchain* new_blockchain(Blockchain* t){
+
+    //struct s_Block* nb = malloc(sizeof(struct s_Block));
+
+
+}
+
+/*-----------------------------------------------------------------*/
+
 void clear_blockchain(blockchainPtr* blockchain){
 
     Block* block = (*blockchain)->sentinel;
@@ -57,8 +66,8 @@ void clear_blockchain(blockchainPtr* blockchain){
         free(block->next);
         block = tmp;
 
-    } while (block != (*blockchain)->sentinel->previous);
-
+    } while (block != (*blockchain)->sentinel);
+    free(*blockchain);
     *blockchain = NULL;
 }
 

@@ -14,6 +14,8 @@ typedef Blockchain* blockchainPtr;
 
 Blockchain* blockchain(int max_transaction, BYTE difficulty);
 
+Blockchain* new_blockchain(Blockchain* t);
+
 void clear_blockchain(blockchainPtr* blockchain);
 
 size_t block_count(Blockchain* blockchain);

@@ -14,8 +14,7 @@ int main() {
     (void)t;
 
     Blockchain* b = blockchain(MAX_T, DIFFICULTY);
-
     clear_blockchain(&b);
-
+    clear_transactions(&t);
     return 0;
 }
