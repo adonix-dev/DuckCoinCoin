@@ -9,12 +9,18 @@ int main() {
 
     printf("1_DCC_C\n");
 
-    Transactions* t = create_transaction(3);
-
-    (void)t;
 
     Blockchain* b = blockchain(MAX_T, DIFFICULTY);
+
+    set_block_transactions(b);
+
+    for (int i = 0; i < 20; ++i) {
+
+        new_block(b, MAX_T);
+        set_block_transactions(b);
+    }
+
     clear_blockchain(&b);
-    clear_transactions(&t);
+
     return 0;
 }
