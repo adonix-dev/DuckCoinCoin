@@ -31,26 +31,6 @@ Transactions* transactions(){
 
 /*-----------------------------------------------------------------*/
 
-void clear_transactions(transacPtr* transactions){
-
-	//if (transactions_count(*transactions)){
-		Transaction* transaction = (*transactions)->sentinel;
-		Transaction* tmp;
-
-		do {
-			tmp = transaction->next;
-			free(transaction->next);
-			transaction = tmp;
-
-		} while (transaction != (*transactions)->sentinel->previous);
-	//}
-	//else free((*transactions)->sentinel->next);
-
-    *transactions = NULL;
-}
-
-/*-----------------------------------------------------------------*/
-
 Transactions* new_transaction(Transactions* t){
 
     struct s_Transaction* nt = malloc(sizeof(struct s_Transaction));
@@ -71,6 +51,25 @@ Transactions* new_transaction(Transactions* t){
 
     ++(t->size);
 
+    return t;
+}
+
+/*-----------------------------------------------------------------*/
+
+void clear_transactions(transacPtr* transactions){
+
+    Transaction* transaction = (*transactions)->sentinel;
+    Transaction* tmp;
+
+    do {
+        tmp = transaction->next;
+        free(transaction);
+        transaction = tmp;
+
+    } while (transaction != (*transactions)->sentinel);
+    //free((*transactions)->sentinel);
+    free((*transactions));
+    *transactions = NULL;
 }
 
 /*-----------------------------------------------------------------*/
@@ -82,8 +81,6 @@ size_t transactions_count(Transactions* transactions){
 /*-----------------------------------------------------------------*/
 
 Transactions* create_transaction(int nb_transaction){
-
-    srand((unsigned int)time(NULL));
 
     Transactions* t = transactions();
 
