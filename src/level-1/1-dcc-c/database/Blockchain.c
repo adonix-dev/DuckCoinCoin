@@ -17,7 +17,7 @@ typedef struct s_Block{
     time_t          timestamp;
     BYTE            last_hash[32];
     BYTE            nb_transactions;
-    BYTE            transaction_details[10 * (TRANSACTION_STR_LENGTH + MAX_VALUE_LENGTH)]; //"Source-Destination : RAND_VALUE"
+    BYTE            transaction_details[10][(TRANSACTION_STR_LENGTH + MAX_VALUE_LENGTH)]; //"Source-Destination : RAND_VALUE"
     BYTE            merklel_root_hash[32];
     BYTE            current_hash[32];
     unsigned int    nonce;
@@ -53,7 +53,7 @@ Blockchain* blockchain(int max_transaction, BYTE difficulty){
     blockchain->sentinel->next = blockchain->sentinel;
     blockchain->sentinel->previous = blockchain->sentinel;
 
-    printf("==Block %zu==    %s%s%s\n", blockchain->size, GREEN, "Created", RESET);
+    printf("==Block %zu==    %s%s%s (Accepts %d transactions)\n", blockchain->size, GREEN, "Created", RESET, blockchain->sentinel->nb_transactions);
 
     return blockchain;
 }
@@ -79,7 +79,7 @@ Blockchain* new_block(Blockchain* b, int max_transaction){
 
     ++(b->size);
 
-    printf("==Block %zu==    %s%s%s\n", b->size, GREEN, "Created", RESET);
+    printf("==Block %zu==    %s%s%s (Accepts %d transactions)\n", b->size, GREEN, "Created", RESET, nb->nb_transactions);
 
     return b;
 }
@@ -95,13 +95,64 @@ Blockchain* set_block_transactions(Blockchain* b){
         BYTE buffer[TRANSACTION_STR_LENGTH + MAX_VALUE_LENGTH];
         snprintf((char*)buffer, sizeof(buffer), "%s %d", transaction_details,  random_exchange_value);
 
-        for (int j = 0; j < sizeof(buffer); ++j)
-            b->sentinel->previous->transaction_details[((TRANSACTION_STR_LENGTH + MAX_VALUE_LENGTH)*i)+j] = buffer[j];
+        strcpy((char*)b->sentinel->previous->transaction_details[i], (char*)buffer);
 
-        printf("==Block %d==    Random Transaction %d: %s%s%s (%s)\n", b->sentinel->previous->index, i ,GREEN, "Created", RESET, buffer);
+        printf("==Block %d==    Random Transaction %d: %s%s%s (%s)\n", b->sentinel->previous->index, i+1 ,GREEN, "Created", RESET, buffer);
     }
     printf("\n");
     return b;
+}
+
+/*-----------------------------------------------------------------*/
+//void sha256ofString(BYTE * str,char hashRes[SHA256_BLOCK_SIZE*2 + 1]);
+
+
+Blockchain* calculate_merkle_root(Blockchain* b){
+
+    size_t nb_transactions = b->sentinel->previous->nb_transactions;
+    //int tree_levels[10] = {1, 2, 3, 3, 4, 4, 4, 4, 5, 5};
+    //BYTE** hashed_transaction;
+
+    BYTE** hashed_transaction;
+
+    hashed_transaction = malloc(nb_transactions * sizeof(BYTE*));
+
+    for (int i = 0; i < nb_transactions; i++){
+        hashed_transaction[i] = malloc((SHA256_BLOCK_SIZE*2 +1) * sizeof(BYTE));
+        sha256ofString(b->sentinel->previous->transaction_details[i], (char*)hashed_transaction[i]);
+    }
+
+    for (int j = 0; j < nb_transactions; ++j) {
+        printf("%s\n", hashed_transaction[j]);
+    }
+/*
+    for (int i = 0; i < tree_levels[nb_transactions]; ++i) {
+
+        if(!nb_transactions%2){
+
+            BYTE hashed_t[((nb_transactions-1)/2)+1][SHA256_BLOCK_SIZE*2 + 1];
+
+            for (int j = 0; j < nb_transactions; ++j) {
+
+
+
+            }
+        }
+        else{
+            printf("lol");
+        }
+
+    }
+
+*/
+    printf("\n");
+
+
+    for (int k = 0; k < nb_transactions; ++k) free(hashed_transaction[k]);
+    free(hashed_transaction);
+
+    return b;
+
 }
 
 /*-----------------------------------------------------------------*/

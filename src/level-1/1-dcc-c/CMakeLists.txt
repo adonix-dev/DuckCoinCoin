@@ -8,7 +8,6 @@ add_executable(
 		c-lib/sha256/sha256.c       c-lib/sha256/sha256.h
         c-lib/sha256/sha256_utils.c c-lib/sha256/sha256_utils.h
         database/Blockchain.c database/Blockchain.h
-        database/Transaction.c database/Transaction.h
 )
 
 find_program( MEMORYCHECK_COMMAND valgrind )
