@@ -231,6 +231,33 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/1_dcc_c.dir/build.make CMakeFiles/1_dcc_c.dir/main.c.s
 .PHONY : main.c.s
 
+processing/Hash.o: processing/Hash.c.o
+
+.PHONY : processing/Hash.o
+
+# target to build an object file
+processing/Hash.c.o:
+	$(MAKE) -f CMakeFiles/1_dcc_c.dir/build.make CMakeFiles/1_dcc_c.dir/processing/Hash.c.o
+.PHONY : processing/Hash.c.o
+
+processing/Hash.i: processing/Hash.c.i
+
+.PHONY : processing/Hash.i
+
+# target to preprocess a source file
+processing/Hash.c.i:
+	$(MAKE) -f CMakeFiles/1_dcc_c.dir/build.make CMakeFiles/1_dcc_c.dir/processing/Hash.c.i
+.PHONY : processing/Hash.c.i
+
+processing/Hash.s: processing/Hash.c.s
+
+.PHONY : processing/Hash.s
+
+# target to generate assembly for a file
+processing/Hash.c.s:
+	$(MAKE) -f CMakeFiles/1_dcc_c.dir/build.make CMakeFiles/1_dcc_c.dir/processing/Hash.c.s
+.PHONY : processing/Hash.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -252,6 +279,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... processing/Hash.o"
+	@echo "... processing/Hash.i"
+	@echo "... processing/Hash.s"
 .PHONY : help
 
 

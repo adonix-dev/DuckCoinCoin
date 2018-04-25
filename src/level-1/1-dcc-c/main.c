@@ -10,14 +10,16 @@ int main() {
 
 
     Blockchain* b = blockchain(MAX_T, DIFFICULTY);
+
     set_block_transactions(b);
     calculate_merkle_root(b);
+    printf("\n");
 
-
-    for (int i = 0; i < 5; ++i) {
+    for (int i = 0; i < 10; ++i) {
         new_block(b, MAX_T);
         set_block_transactions(b);
         calculate_merkle_root(b);
+        printf("\n");
     }
 
     clear_blockchain(&b);

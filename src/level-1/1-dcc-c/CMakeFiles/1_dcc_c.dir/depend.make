@@ -12,9 +12,16 @@ CMakeFiles/1_dcc_c.dir/database/Blockchain.c.o: c-lib/sha256/sha256.h
 CMakeFiles/1_dcc_c.dir/database/Blockchain.c.o: c-lib/sha256/sha256_utils.h
 CMakeFiles/1_dcc_c.dir/database/Blockchain.c.o: database/Blockchain.c
 CMakeFiles/1_dcc_c.dir/database/Blockchain.c.o: database/Blockchain.h
+CMakeFiles/1_dcc_c.dir/database/Blockchain.c.o: processing/Hash.h
 
 CMakeFiles/1_dcc_c.dir/main.c.o: c-lib/sha256/sha256.h
 CMakeFiles/1_dcc_c.dir/main.c.o: c-lib/sha256/sha256_utils.h
 CMakeFiles/1_dcc_c.dir/main.c.o: database/Blockchain.h
 CMakeFiles/1_dcc_c.dir/main.c.o: main.c
+CMakeFiles/1_dcc_c.dir/main.c.o: processing/Hash.h
+
+CMakeFiles/1_dcc_c.dir/processing/Hash.c.o: c-lib/sha256/sha256.h
+CMakeFiles/1_dcc_c.dir/processing/Hash.c.o: c-lib/sha256/sha256_utils.h
+CMakeFiles/1_dcc_c.dir/processing/Hash.c.o: processing/Hash.c
+CMakeFiles/1_dcc_c.dir/processing/Hash.c.o: processing/Hash.h
 

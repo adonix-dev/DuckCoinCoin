@@ -5,7 +5,8 @@
 #include <string.h> //for stpcpy
 #include <stdio.h>  //for snprintf et fprintf
 #include <stdlib.h> //for malloc
-#include "../c-lib/sha256/sha256_utils.h"
+#include <assert.h>
+#include "../processing/Hash.h"
 
 #define MAX_VALUE 1000      //max transaction amount
 #define MAX_VALUE_LENGTH 4  //length of MAX_VALUE

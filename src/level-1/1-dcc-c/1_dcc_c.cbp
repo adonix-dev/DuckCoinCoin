@@ -101,6 +101,12 @@
 		<Unit filename="/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/main.c">
 			<Option target="1_dcc_c"/>
 		</Unit>
+		<Unit filename="/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/processing/Hash.c">
+			<Option target="1_dcc_c"/>
+		</Unit>
+		<Unit filename="/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/processing/Hash.h">
+			<Option target="1_dcc_c"/>
+		</Unit>
 		<Unit filename="/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
