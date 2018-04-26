@@ -80,6 +80,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/Config.h">
+			<Option target="1_dcc_c"/>
+		</Unit>
 		<Unit filename="/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/c-lib/sha256/sha256.c">
 			<Option target="1_dcc_c"/>
 		</Unit>
@@ -98,13 +101,25 @@
 		<Unit filename="/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/database/Blockchain.h">
 			<Option target="1_dcc_c"/>
 		</Unit>
+		<Unit filename="/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/error/Error.c">
+			<Option target="1_dcc_c"/>
+		</Unit>
+		<Unit filename="/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/error/Error.h">
+			<Option target="1_dcc_c"/>
+		</Unit>
 		<Unit filename="/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/main.c">
 			<Option target="1_dcc_c"/>
 		</Unit>
-		<Unit filename="/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/processing/Hash.c">
+		<Unit filename="/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/processing/Merkel_Hash.c">
 			<Option target="1_dcc_c"/>
 		</Unit>
-		<Unit filename="/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/processing/Hash.h">
+		<Unit filename="/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/processing/Merkel_Hash.h">
+			<Option target="1_dcc_c"/>
+		</Unit>
+		<Unit filename="/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/utils/blockchain_utils.c">
+			<Option target="1_dcc_c"/>
+		</Unit>
+		<Unit filename="/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/utils/blockchain_utils.h">
 			<Option target="1_dcc_c"/>
 		</Unit>
 		<Unit filename="/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/CMakeLists.txt">

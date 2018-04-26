@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/Config.h
+
 /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/c-lib/sha256/sha256.c
 stdlib.h
 -
@@ -35,6 +37,8 @@ sha256.h
 /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/c-lib/sha256/sha256.h
 
 /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/database/Blockchain.c
+../Config.h
+/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/Config.h
 Blockchain.h
 /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/database/Blockchain.h
 
@@ -49,20 +53,42 @@ stdlib.h
 -
 assert.h
 -
-../processing/Hash.h
-/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/processing/Hash.h
+stdbool.h
+-
+../processing/Merkel_Hash.h
+/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/processing/Merkel_Hash.h
+
+/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/error/Error.c
+string.h
+-
+Error.h
+/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/error/Error.h
+../Config.h
+/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/Config.h
+
+/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/error/Error.h
+stdio.h
+-
+stdlib.h
+-
+../c-lib/sha256/sha256_utils.h
+/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/c-lib/sha256/sha256_utils.h
 
 /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/main.c
 stdio.h
 -
+Config.h
+/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/Config.h
+error/Error.h
+/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/error/Error.h
 database/Blockchain.h
 /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/database/Blockchain.h
 
-/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/processing/Hash.c
-Hash.h
-/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/processing/Hash.h
+/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/processing/Merkel_Hash.c
+Merkel_Hash.h
+/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/processing/Merkel_Hash.h
 
-/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/processing/Hash.h
+/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/processing/Merkel_Hash.h
 assert.h
 -
 stdio.h
@@ -71,4 +97,10 @@ stdlib.h
 -
 ../c-lib/sha256/sha256_utils.h
 /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/c-lib/sha256/sha256_utils.h
+
+/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/utils/blockchain_utils.c
+blockchain_utils.h
+/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/utils/blockchain_utils.h
+
+/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/utils/blockchain_utils.h
 

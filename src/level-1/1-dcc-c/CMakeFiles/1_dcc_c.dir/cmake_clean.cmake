@@ -3,7 +3,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/1_dcc_c.dir/c-lib/sha256/sha256.c.o"
   "CMakeFiles/1_dcc_c.dir/c-lib/sha256/sha256_utils.c.o"
   "CMakeFiles/1_dcc_c.dir/database/Blockchain.c.o"
-  "CMakeFiles/1_dcc_c.dir/processing/Hash.c.o"
+  "CMakeFiles/1_dcc_c.dir/processing/Merkel_Hash.c.o"
+  "CMakeFiles/1_dcc_c.dir/error/Error.c.o"
+  "CMakeFiles/1_dcc_c.dir/utils/blockchain_utils.c.o"
   "1_dcc_c.pdb"
   "1_dcc_c"
 )

@@ -12,8 +12,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="97cd2b5b-35a5-4f85-bf35-20b3f0072475" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/processing/Hash.c" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/processing/Hash.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Config.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/error/Error.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/error/Error.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/utils/blockchain_utils.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/utils/blockchain_utils.h" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/1_dcc_c" afterPath="$PROJECT_DIR$/1_dcc_c" />
       <change beforePath="$PROJECT_DIR$/1_dcc_c.cbp" afterPath="$PROJECT_DIR$/1_dcc_c.cbp" />
@@ -22,11 +25,12 @@
       <change beforePath="$PROJECT_DIR$/CMakeFiles/1_dcc_c.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/CMakeFiles/1_dcc_c.dir/DependInfo.cmake" />
       <change beforePath="$PROJECT_DIR$/CMakeFiles/1_dcc_c.dir/build.make" afterPath="$PROJECT_DIR$/CMakeFiles/1_dcc_c.dir/build.make" />
       <change beforePath="$PROJECT_DIR$/CMakeFiles/1_dcc_c.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/CMakeFiles/1_dcc_c.dir/cmake_clean.cmake" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/1_dcc_c.dir/database/Blockchain.c.o" afterPath="$PROJECT_DIR$/CMakeFiles/1_dcc_c.dir/database/Blockchain.c.o" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/1_dcc_c.dir/database/Blockchain.c.o" afterPath="" />
       <change beforePath="$PROJECT_DIR$/CMakeFiles/1_dcc_c.dir/depend.internal" afterPath="$PROJECT_DIR$/CMakeFiles/1_dcc_c.dir/depend.internal" />
       <change beforePath="$PROJECT_DIR$/CMakeFiles/1_dcc_c.dir/depend.make" afterPath="$PROJECT_DIR$/CMakeFiles/1_dcc_c.dir/depend.make" />
       <change beforePath="$PROJECT_DIR$/CMakeFiles/1_dcc_c.dir/link.txt" afterPath="$PROJECT_DIR$/CMakeFiles/1_dcc_c.dir/link.txt" />
       <change beforePath="$PROJECT_DIR$/CMakeFiles/1_dcc_c.dir/main.c.o" afterPath="$PROJECT_DIR$/CMakeFiles/1_dcc_c.dir/main.c.o" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/1_dcc_c.dir/processing/Hash.c.o" afterPath="" />
       <change beforePath="$PROJECT_DIR$/CMakeFiles/1_dcc_c.dir/progress.make" afterPath="$PROJECT_DIR$/CMakeFiles/1_dcc_c.dir/progress.make" />
       <change beforePath="$PROJECT_DIR$/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/CMakeFiles/Makefile2" />
       <change beforePath="$PROJECT_DIR$/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/CMakeFiles/progress.marks" />
@@ -35,6 +39,8 @@
       <change beforePath="$PROJECT_DIR$/database/Blockchain.c" afterPath="$PROJECT_DIR$/database/Blockchain.c" />
       <change beforePath="$PROJECT_DIR$/database/Blockchain.h" afterPath="$PROJECT_DIR$/database/Blockchain.h" />
       <change beforePath="$PROJECT_DIR$/main.c" afterPath="$PROJECT_DIR$/main.c" />
+      <change beforePath="$PROJECT_DIR$/processing/Hash.c" afterPath="$PROJECT_DIR$/processing/Merkel_Hash.c" />
+      <change beforePath="$PROJECT_DIR$/processing/Hash.h" afterPath="$PROJECT_DIR$/processing/Merkel_Hash.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/CMakeFiles/" />
@@ -47,14 +53,14 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.37037036">
+    <splitter split-orientation="horizontal" split-proportion="0.52628434">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="main.c" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="315">
-                  <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+                <state relative-caret-position="270">
+                  <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
                   <folding>
                     <element signature="e#0#18#0" expanded="true" />
                   </folding>
@@ -62,11 +68,65 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Blockchain.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/database/Blockchain.h">
+          <file leaf-file-name="Config.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Config.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="45">
+                  <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Error.c" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/error/Error.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="210">
+                  <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+                  <folding>
+                    <element signature="e#1#20#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Error.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/error/Error.h">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="105">
-                  <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+                  <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+                  <folding>
+                    <element signature="e#15#60#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Merkel_Hash.c" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/processing/Merkel_Hash.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="465">
+                  <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="blockchain_utils.c" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/utils/blockchain_utils.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="blockchain_utils.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/utils/blockchain_utils.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="45">
+                  <caret line="3" column="34" lean-forward="false" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
                   <folding />
                 </state>
               </provider>
@@ -79,30 +139,34 @@
           <file leaf-file-name="Blockchain.c" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/database/Blockchain.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-385">
-                  <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-                  <folding />
+                <state relative-caret-position="15">
+                  <caret line="118" column="4" lean-forward="false" selection-start-line="118" selection-start-column="4" selection-end-line="118" selection-end-column="4" />
+                  <folding>
+                    <element signature="e#0#22#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Hash.c" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/processing/Hash.c">
+          <file leaf-file-name="Merkel_Hash.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/processing/Merkel_Hash.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Hash.h" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/processing/Hash.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+                <state relative-caret-position="90">
+                  <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
                   <folding>
                     <element signature="e#15#34#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Blockchain.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/database/Blockchain.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="270">
+                  <caret line="18" column="48" lean-forward="false" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+                  <folding>
+                    <element signature="e#15#43#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -134,11 +198,17 @@
         <option value="$PROJECT_DIR$/Makefile" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/database/Transaction.c" />
-        <option value="$PROJECT_DIR$/database/Blockchain.h" />
         <option value="$PROJECT_DIR$/processing/Hash.c" />
         <option value="$PROJECT_DIR$/processing/Hash.h" />
-        <option value="$PROJECT_DIR$/database/Blockchain.c" />
+        <option value="$PROJECT_DIR$/Error.h" />
+        <option value="$PROJECT_DIR$/Error.c" />
+        <option value="$PROJECT_DIR$/utils/blockchain_utils.h" />
+        <option value="$PROJECT_DIR$/processing/Merkel_Hash.h" />
+        <option value="$PROJECT_DIR$/processing/Merkel_Hash.c" />
+        <option value="$PROJECT_DIR$/database/Blockchain.h" />
+        <option value="$PROJECT_DIR$/Config.h" />
         <option value="$PROJECT_DIR$/main.c" />
+        <option value="$PROJECT_DIR$/database/Blockchain.c" />
       </list>
     </option>
   </component>
@@ -149,10 +219,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="-1010" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="-1057" />
     <option name="width" value="1920" />
-    <option name="height" value="1010" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -185,12 +255,13 @@
             <path>
               <item name="1_dcc_c" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="1-dcc-c" type="462c0819:PsiDirectoryNode" />
-              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
+              <item name="c-lib" type="462c0819:PsiDirectoryNode" />
+              <item name="sha256" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="1_dcc_c" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="1-dcc-c" type="462c0819:PsiDirectoryNode" />
-              <item name="processing" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -206,6 +277,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/error" />
       <recent name="$PROJECT_DIR$/database" />
     </key>
   </component>
@@ -222,7 +295,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.1_dcc_c">
-    <configuration name="1_dcc_c" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="1_dcc_c" TARGET_NAME="1_dcc_c" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="1_dcc_c" RUN_TARGET_NAME="1_dcc_c">
+    <configuration name="1_dcc_c" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="97" PASS_PARENT_ENVS_2="true" PROJECT_NAME="1_dcc_c" TARGET_NAME="1_dcc_c" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="1_dcc_c" RUN_TARGET_NAME="1_dcc_c">
       <envs />
     </configuration>
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="1_dcc_c" RUN_TARGET_NAME="1_dcc_c" EXPLICIT_BUILD_TARGET_NAME="all">
@@ -276,12 +349,13 @@
       <workItem from="1524506847139" duration="1212000" />
       <workItem from="1524508734378" duration="2316000" />
       <workItem from="1524517969219" duration="373000" />
-      <workItem from="1524657739552" duration="13393000" />
+      <workItem from="1524657739552" duration="18602000" />
+      <workItem from="1524682397494" duration="10588000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="207073000" />
+    <option name="totallyTimeSpent" value="222870000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -293,18 +367,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-1057" width="1920" height="1057" extended-state="6" />
+    <frame x="0" y="-1057" width="1920" height="1057" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11848341" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31392932" sideWeight="0.40126383" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994923" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3567447" sideWeight="0.25697735" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12889813" sideWeight="0.48973143" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1933472" sideWeight="0.49753347" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25675675" sideWeight="0.48973143" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1933472" sideWeight="0.49753347" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913166" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3024948" sideWeight="0.7430226" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32848233" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35031185" sideWeight="0.7430226" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -352,19 +427,21 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.c</url>
+          <line>27</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="105" />
+      <option name="time" value="108" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main.c" />
-    <entry file="file://$PROJECT_DIR$/database/Transaction.h" />
-    <entry file="file://$PROJECT_DIR$/database/Blockchain.h" />
-    <entry file="file://$PROJECT_DIR$/database/Blockchain.c" />
-    <entry file="file://$PROJECT_DIR$/database/Blockchain.h" />
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt" />
     <entry file="file://$PROJECT_DIR$/database/Blockchain.c" />
     <entry file="file://$PROJECT_DIR$/main.c" />
@@ -466,44 +543,92 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database/Blockchain.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding />
+        <state relative-caret-position="270">
+          <caret line="18" column="48" lean-forward="false" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+          <folding>
+            <element signature="e#15#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/processing/Hash.c">
+    <entry file="file://$PROJECT_DIR$/processing/Merkel_Hash.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/processing/Hash.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="90">
+          <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
           <folding>
             <element signature="e#15#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/Blockchain.c">
+    <entry file="file://$PROJECT_DIR$/utils/blockchain_utils.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-385">
-          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+        <state relative-caret-position="45">
+          <caret line="3" column="34" lean-forward="false" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/error/Error.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          <folding>
+            <element signature="e#15#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/processing/Merkel_Hash.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/blockchain_utils.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Config.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/error/Error.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="e#1#20#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        <state relative-caret-position="270">
+          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/Blockchain.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="118" column="4" lean-forward="false" selection-start-line="118" selection-start-column="4" selection-end-line="118" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
           </folding>
         </state>
       </provider>

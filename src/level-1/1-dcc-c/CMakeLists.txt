@@ -8,7 +8,7 @@ add_executable(
 		c-lib/sha256/sha256.c       c-lib/sha256/sha256.h
         c-lib/sha256/sha256_utils.c c-lib/sha256/sha256_utils.h
         database/Blockchain.c database/Blockchain.h
-        processing/Hash.c processing/Hash.h)
+		processing/Merkel_Hash.c processing/Merkel_Hash.h Config.h error/Error.c error/Error.h utils/blockchain_utils.c utils/blockchain_utils.h)
 
 find_program( MEMORYCHECK_COMMAND valgrind )
 set( MEMORYCHECK_COMMAND_OPTIONS "--trace-children=yes --leak-check=full" )
