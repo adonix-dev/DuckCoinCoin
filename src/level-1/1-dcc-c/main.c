@@ -8,21 +8,19 @@ int main(int argc, const char* argv[]) {
     clock_t start, end;
     start = clock();
 
-    //if(atoi(argv[1])-1 > MAX_TRANSACTION) error(10, RED, "Transactions per block can't exceed MAX_TRANSACTION (see Config.h)");
-
     Blockchain* b = blockchain(DIFFICULTY);
 
     set_block_transactions(b);
     calculate_merkle_root(b);
     hash_block(b);
-    //printf("\n");
+    printf("\n");
 
     for (int i = 0; i < atoi(argv[1])-1; ++i) {
         new_block(b);
         set_block_transactions(b);
         calculate_merkle_root(b);
         hash_block(b);
-        //printf("\n");
+        printf("\n");
     }
 
     clear_blockchain(&b);
