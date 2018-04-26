@@ -28,4 +28,4 @@ Blockchain* hash_block(Blockchain* b);
 
 void clear_blockchain(blockchainPtr* blockchain);
 
-size_t block_count(Blockchain* blockchain);
+unsigned int block_count(Blockchain* blockchain);

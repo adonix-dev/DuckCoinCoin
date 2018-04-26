@@ -136,7 +136,12 @@ bool check_difficulty(char* hash, unsigned int difficulty){
 
 Blockchain* hash_block(Blockchain* b){
 
-    BYTE buffer[165];
+    /*
+     *                     hashes time index
+     * buffer size > nonce + 64*2 + 10 + 1  =  n + 139
+     * Let's consider a max nonce length of 11 digits
+     */
+    BYTE buffer[150];
     char current_hash[(SHA256_BLOCK_SIZE*2 +1)];
     clock_t start, end;
     start = clock();
@@ -153,7 +158,6 @@ Blockchain* hash_block(Blockchain* b){
                  b->sentinel->previous->last_hash,
                  b->sentinel->previous->merklel_root_hash,
                  b->sentinel->previous->nonce);
-
         sha256ofString(buffer, current_hash);
     }
     strcpy((char*)b->sentinel->previous->current_hash, current_hash);
@@ -161,9 +165,6 @@ Blockchain* hash_block(Blockchain* b){
     double exec_time = ((double) (end - start)) / CLOCKS_PER_SEC;
 
     printf("==Block %u==    Block hash: %s%s%s in %fs (%s)\n", b->size, GREEN, "Created", RESET, exec_time, b->sentinel->previous->current_hash);
-
-    //printf("\nNonce: %d\n", b->sentinel->previous->nonce);
-    //printf("Current Hash: %s\n", b->sentinel->previous->current_hash);
 
     return b;
 }
@@ -187,6 +188,6 @@ void clear_blockchain(blockchainPtr* blockchain){
 
 /*-----------------------------------------------------------------*/
 
-size_t block_count(Blockchain* blockchain){
+unsigned int block_count(Blockchain* blockchain){
     return blockchain->size;
 }
