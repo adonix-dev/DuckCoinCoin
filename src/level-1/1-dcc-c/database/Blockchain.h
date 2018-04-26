@@ -16,7 +16,7 @@ typedef struct s_blockchain Blockchain;
 
 typedef Blockchain* blockchainPtr;
 
-Blockchain* blockchain(unsigned int difficulty);
+Blockchain* blockchain(WORD difficulty);
 
 Blockchain* new_block(Blockchain* b);
 

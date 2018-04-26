@@ -1,4 +1,4 @@
 
 #pragma once
 
-void create_random_blockchain(int );
+void create_random_blockchain(int a);
