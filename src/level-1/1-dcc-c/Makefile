@@ -204,6 +204,33 @@ database/Blockchain.c.s:
 	$(MAKE) -f CMakeFiles/1_dcc_c.dir/build.make CMakeFiles/1_dcc_c.dir/database/Blockchain.c.s
 .PHONY : database/Blockchain.c.s
 
+error/Error.o: error/Error.c.o
+
+.PHONY : error/Error.o
+
+# target to build an object file
+error/Error.c.o:
+	$(MAKE) -f CMakeFiles/1_dcc_c.dir/build.make CMakeFiles/1_dcc_c.dir/error/Error.c.o
+.PHONY : error/Error.c.o
+
+error/Error.i: error/Error.c.i
+
+.PHONY : error/Error.i
+
+# target to preprocess a source file
+error/Error.c.i:
+	$(MAKE) -f CMakeFiles/1_dcc_c.dir/build.make CMakeFiles/1_dcc_c.dir/error/Error.c.i
+.PHONY : error/Error.c.i
+
+error/Error.s: error/Error.c.s
+
+.PHONY : error/Error.s
+
+# target to generate assembly for a file
+error/Error.c.s:
+	$(MAKE) -f CMakeFiles/1_dcc_c.dir/build.make CMakeFiles/1_dcc_c.dir/error/Error.c.s
+.PHONY : error/Error.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -231,32 +258,59 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/1_dcc_c.dir/build.make CMakeFiles/1_dcc_c.dir/main.c.s
 .PHONY : main.c.s
 
-processing/Hash.o: processing/Hash.c.o
+processing/Merkel_Hash.o: processing/Merkel_Hash.c.o
 
-.PHONY : processing/Hash.o
+.PHONY : processing/Merkel_Hash.o
 
 # target to build an object file
-processing/Hash.c.o:
-	$(MAKE) -f CMakeFiles/1_dcc_c.dir/build.make CMakeFiles/1_dcc_c.dir/processing/Hash.c.o
-.PHONY : processing/Hash.c.o
+processing/Merkel_Hash.c.o:
+	$(MAKE) -f CMakeFiles/1_dcc_c.dir/build.make CMakeFiles/1_dcc_c.dir/processing/Merkel_Hash.c.o
+.PHONY : processing/Merkel_Hash.c.o
 
-processing/Hash.i: processing/Hash.c.i
+processing/Merkel_Hash.i: processing/Merkel_Hash.c.i
 
-.PHONY : processing/Hash.i
+.PHONY : processing/Merkel_Hash.i
 
 # target to preprocess a source file
-processing/Hash.c.i:
-	$(MAKE) -f CMakeFiles/1_dcc_c.dir/build.make CMakeFiles/1_dcc_c.dir/processing/Hash.c.i
-.PHONY : processing/Hash.c.i
+processing/Merkel_Hash.c.i:
+	$(MAKE) -f CMakeFiles/1_dcc_c.dir/build.make CMakeFiles/1_dcc_c.dir/processing/Merkel_Hash.c.i
+.PHONY : processing/Merkel_Hash.c.i
 
-processing/Hash.s: processing/Hash.c.s
+processing/Merkel_Hash.s: processing/Merkel_Hash.c.s
 
-.PHONY : processing/Hash.s
+.PHONY : processing/Merkel_Hash.s
 
 # target to generate assembly for a file
-processing/Hash.c.s:
-	$(MAKE) -f CMakeFiles/1_dcc_c.dir/build.make CMakeFiles/1_dcc_c.dir/processing/Hash.c.s
-.PHONY : processing/Hash.c.s
+processing/Merkel_Hash.c.s:
+	$(MAKE) -f CMakeFiles/1_dcc_c.dir/build.make CMakeFiles/1_dcc_c.dir/processing/Merkel_Hash.c.s
+.PHONY : processing/Merkel_Hash.c.s
+
+utils/blockchain_utils.o: utils/blockchain_utils.c.o
+
+.PHONY : utils/blockchain_utils.o
+
+# target to build an object file
+utils/blockchain_utils.c.o:
+	$(MAKE) -f CMakeFiles/1_dcc_c.dir/build.make CMakeFiles/1_dcc_c.dir/utils/blockchain_utils.c.o
+.PHONY : utils/blockchain_utils.c.o
+
+utils/blockchain_utils.i: utils/blockchain_utils.c.i
+
+.PHONY : utils/blockchain_utils.i
+
+# target to preprocess a source file
+utils/blockchain_utils.c.i:
+	$(MAKE) -f CMakeFiles/1_dcc_c.dir/build.make CMakeFiles/1_dcc_c.dir/utils/blockchain_utils.c.i
+.PHONY : utils/blockchain_utils.c.i
+
+utils/blockchain_utils.s: utils/blockchain_utils.c.s
+
+.PHONY : utils/blockchain_utils.s
+
+# target to generate assembly for a file
+utils/blockchain_utils.c.s:
+	$(MAKE) -f CMakeFiles/1_dcc_c.dir/build.make CMakeFiles/1_dcc_c.dir/utils/blockchain_utils.c.s
+.PHONY : utils/blockchain_utils.c.s
 
 # Help Target
 help:
@@ -276,12 +330,18 @@ help:
 	@echo "... database/Blockchain.o"
 	@echo "... database/Blockchain.i"
 	@echo "... database/Blockchain.s"
+	@echo "... error/Error.o"
+	@echo "... error/Error.i"
+	@echo "... error/Error.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... processing/Hash.o"
-	@echo "... processing/Hash.i"
-	@echo "... processing/Hash.s"
+	@echo "... processing/Merkel_Hash.o"
+	@echo "... processing/Merkel_Hash.i"
+	@echo "... processing/Merkel_Hash.s"
+	@echo "... utils/blockchain_utils.o"
+	@echo "... utils/blockchain_utils.i"
+	@echo "... utils/blockchain_utils.s"
 .PHONY : help
 
 

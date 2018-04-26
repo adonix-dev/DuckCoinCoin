@@ -1,14 +1,14 @@
 
-#include "Hash.h"
+#include "Merkel_Hash.h"
 
-void concat_hash_two_string(BYTE* a, BYTE* b, BYTE* output_buffer){
+void concat_hash_two_string(char* a, char* b, char* output_buffer){
 
     BYTE buffer[sizeof(a) + sizeof(b)];
     snprintf((char*)buffer, sizeof(buffer), "%s%s", a,  b);
     sha256ofString(buffer, (char*)output_buffer);
 }
 
-void hash_hash(BYTE** hash, size_t* nb_hash){
+void hash_hash(char** hash, size_t* nb_hash){
     assert(*nb_hash>1);  //hash contient plus de 1 hash
 
     int i;

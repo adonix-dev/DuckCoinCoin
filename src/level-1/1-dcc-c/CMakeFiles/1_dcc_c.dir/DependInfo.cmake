@@ -7,8 +7,10 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/c-lib/sha256/sha256.c" "/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/CMakeFiles/1_dcc_c.dir/c-lib/sha256/sha256.c.o"
   "/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/c-lib/sha256/sha256_utils.c" "/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/CMakeFiles/1_dcc_c.dir/c-lib/sha256/sha256_utils.c.o"
   "/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/database/Blockchain.c" "/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/CMakeFiles/1_dcc_c.dir/database/Blockchain.c.o"
+  "/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/error/Error.c" "/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/CMakeFiles/1_dcc_c.dir/error/Error.c.o"
   "/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/main.c" "/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/CMakeFiles/1_dcc_c.dir/main.c.o"
-  "/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/processing/Hash.c" "/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/CMakeFiles/1_dcc_c.dir/processing/Hash.c.o"
+  "/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/processing/Merkel_Hash.c" "/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/CMakeFiles/1_dcc_c.dir/processing/Merkel_Hash.c.o"
+  "/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/utils/blockchain_utils.c" "/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/CMakeFiles/1_dcc_c.dir/utils/blockchain_utils.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
