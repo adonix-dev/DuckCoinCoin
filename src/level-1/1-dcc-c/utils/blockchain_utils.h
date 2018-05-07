@@ -9,3 +9,5 @@
 Blockchain* create_random_blockchain(int number_of_blocks, int difficulty);
 
 void blockchain_integrity_check(Blockchain* blockchain);
+
+void delete_block(Blockchain* blockchain, int block_index);

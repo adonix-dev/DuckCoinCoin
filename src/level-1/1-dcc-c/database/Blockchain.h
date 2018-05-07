@@ -30,6 +30,8 @@ Blockchain* hash_block(Blockchain* b);
 
 bool integrity_check(Blockchain* blockchain);
 
+void delete_block_at(Blockchain* blockchain, int block_index);
+
 void clear_blockchain(blockchainPtr* blockchain);
 
 unsigned int block_count(Blockchain* blockchain);

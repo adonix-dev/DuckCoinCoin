@@ -15,7 +15,7 @@ int main(int argc, const char* argv[]) {
 
 
     while(true){
-
+        printf("------------------------------------------\n");
         printf("Enter: \n"
                        "1 - If you want to check the blockchain integrity \n"
                        "2 - If you want to delete a block\n"
@@ -32,9 +32,17 @@ int main(int argc, const char* argv[]) {
                 break;
             case 2:
                 printf("maelle\n");
+                printf("Enter le block you want to delete (<%d) -->  ", block_count(blockchain)-1);
+                scanf("%d", &choice);
+                while(choice>block_count(blockchain)-1){
+                    printf("%sEnter a value less than %d%s------------>   ",RED, block_count(blockchain)-1, RESET);
+                    scanf("%d", &choice);
+                }
+                delete_block(blockchain, choice);
+                printf("Block %d deleted", choice);
                 break;
             case 3:
-                printf("maelle\n");
+                printf("Not Implemented\n");
                 break;
             case 4:
                 printf("%s%s%s", BLUE, "Blockchain erased !\nProgram closed\n", RESET);
@@ -43,13 +51,11 @@ int main(int argc, const char* argv[]) {
         }
 
         if(exit) break;
+        printf("------------------------------------------\n");
 
     }
 
     clear_blockchain(&blockchain);
-
-
-
 
     return 0;
 }

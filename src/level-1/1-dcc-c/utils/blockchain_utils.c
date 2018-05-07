@@ -39,5 +39,9 @@ void blockchain_integrity_check(Blockchain* blockchain){
     }
 }
 
-void delete_
+void delete_block(Blockchain* blockchain, int block_index){
+
+    delete_block_at(blockchain, block_index);
+
+}
 

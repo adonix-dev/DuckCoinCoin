@@ -283,6 +283,69 @@ bool integrity_check(Blockchain* blockchain){
 
 }
 
+
+void delete_block_at(Blockchain* blockchain, int block_index){
+
+    Block* current = blockchain->sentinel;
+
+
+    for(int i = 0; i < block_index; ++i) current = current->next;
+
+    current->previous->next = current->next;
+    current->next->previous = current->previous;
+    strcpy((char*)current->next->last_hash, (char*)current->previous->current_hash);
+
+    Block* current_tmp = current;
+
+    current = current->next;
+
+    free(current_tmp);
+
+    --(blockchain->size);
+
+    for (int i = block_index; i < blockchain->size; ++i) {
+
+        --(current->index);
+        current->nonce = 0;
+
+        BYTE buffer[150];
+        char current_hash[(SHA256_BLOCK_SIZE*2 +1)];
+
+
+        snprintf((char*)buffer, sizeof(buffer), "%d%ld%s%s%d",
+                 current->index,
+                 current->timestamp,
+                 current->last_hash,
+                 current->merklel_root_hash,
+                 current->nonce);
+
+        sha256ofString(buffer, current_hash);
+
+        while(!check_difficulty(current_hash, blockchain->difficulty)){
+
+            ++(current->nonce);
+
+            snprintf((char*)buffer, sizeof(buffer), "%d%ld%s%s%d",
+                     current->index,
+                     current->timestamp,
+                     current->last_hash,
+                     current->merklel_root_hash,
+                     current->nonce);
+
+            sha256ofString(buffer, current_hash);
+        }
+        strcpy((char*)current->current_hash, current_hash);
+
+        printf("==Block %u==    Block hash: %s%s%s (%s%s%s) and nonce is %d\n", current->index, GREEN, "Created", RESET, MAGENTA, current->current_hash, RESET, current->nonce);
+
+
+        current = current->next;
+    }
+
+
+
+}
+
 /*-----------------------------------------------------------------*/
 
 void clear_blockchain(blockchainPtr* blockchain){
