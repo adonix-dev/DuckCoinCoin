@@ -1,5 +1,10 @@
 # DuckCoinCoin
 
-Project of C and Java of Second year of University
+Create a blockchain generator from scratch.
 
-Creating a blockchain.
+Project of object-oriented second-year Computer Science degree at Paul Sabatier University.
+
+# Authors
+
+* [Antony Laget](https://github.com/adonix-dev) - *Source code*
+* [Aubin Clerc](https://github.com/Sunibo) - *User interface*
