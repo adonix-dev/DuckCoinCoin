@@ -6,4 +6,6 @@
 #include "../error/Error.h"
 #include "../database/Blockchain.h"
 
-void create_random_blockchain(int number_of_blocks, int difficulty);
+Blockchain* create_random_blockchain(int number_of_blocks, int difficulty);
+
+void blockchain_integrity_check(Blockchain* blockchain);

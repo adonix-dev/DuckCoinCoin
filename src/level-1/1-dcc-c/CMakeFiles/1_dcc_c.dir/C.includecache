@@ -31,6 +31,10 @@ stdbool.h
 -
 ../processing/Merkel_Hash.h
 /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/./processing/Merkel_Hash.h
+../error/Error.h
+/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/./error/Error.h
+../Config.h
+/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/./Config.h
 
 /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/./error/Error.h
 stdio.h
@@ -105,8 +109,6 @@ sha256.h
 /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/c-lib/sha256/sha256.h
 
 /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/database/Blockchain.c
-../Config.h
-/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/Config.h
 Blockchain.h
 /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/database/Blockchain.h
 
@@ -125,6 +127,10 @@ stdbool.h
 -
 ../processing/Merkel_Hash.h
 /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/processing/Merkel_Hash.h
+../error/Error.h
+/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/error/Error.h
+../Config.h
+/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/Config.h
 
 /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/error/Error.c
 string.h

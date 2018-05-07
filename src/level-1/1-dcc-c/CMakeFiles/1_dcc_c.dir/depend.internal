@@ -14,6 +14,7 @@ CMakeFiles/1_dcc_c.dir/database/Blockchain.c.o
  /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/c-lib/sha256/sha256_utils.h
  /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/database/Blockchain.c
  /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/database/Blockchain.h
+ /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/error/Error.h
  /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/processing/Merkel_Hash.h
 CMakeFiles/1_dcc_c.dir/error/Error.c.o
  /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/Config.h

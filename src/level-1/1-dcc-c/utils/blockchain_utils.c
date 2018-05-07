@@ -1,7 +1,7 @@
 
 #include "blockchain_utils.h"
 
-void create_random_blockchain(int number_of_blocks, int difficulty){
+Blockchain* create_random_blockchain(int number_of_blocks, int difficulty){
 
     clock_t start, end;
     start = clock();
@@ -21,13 +21,23 @@ void create_random_blockchain(int number_of_blocks, int difficulty){
         printf("\n");
     }
 
-    if(integrity_check(b)){
-        printf("Blockchain is ok\n");
-    }
-
     end = clock();
     double exec_time = ((double) (end - start)) / CLOCKS_PER_SEC;
     printf("%d Blocks hashed in: %f with a difficulty of %d\n", number_of_blocks, exec_time, difficulty);
 
-    clear_blockchain(&b);
+    return b;
+
 }
+
+void blockchain_integrity_check(Blockchain* blockchain){
+
+    if(integrity_check(blockchain)){
+        printf("Blockchain is ok%s\n", RESET);
+    }
+    else{
+        printf("Blockchain is corrupted%s", RESET);
+    }
+}
+
+void delete_
+

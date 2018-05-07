@@ -12,4 +12,3 @@
 #define RESET   "\x1b[0m"
 
 //tmp a definir par l'utilisateur via console
-#define DIFFICULTY 4        //difficulte hashage blockchain

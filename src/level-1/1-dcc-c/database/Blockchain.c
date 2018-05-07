@@ -1,4 +1,4 @@
-#include "../Config.h"
+
 #include "Blockchain.h"
 
 #define TRANSACTION_STR_LENGTH 20 //"Source-Destination"
@@ -116,7 +116,7 @@ Blockchain* calculate_merkle_root(Blockchain* b){
     for (int k = 0; k < b->sentinel->previous->nb_transactions; ++k) free(hashed_transaction[k]);
     free(hashed_transaction);
 
-    printf("==Block %u==    Transaction Merkel Root: %s%s%s (%s)\n", b->size, GREEN, "Created", RESET, b->sentinel->previous->merklel_root_hash);
+    printf("==Block %u==    Transaction Merkel Root: %s%s%s (%s%s%s)\n", b->size, GREEN, "Created", RESET, MAGENTA, b->sentinel->previous->merklel_root_hash, RESET);
 
     return b;
 
@@ -124,7 +124,7 @@ Blockchain* calculate_merkle_root(Blockchain* b){
 
 /*-----------------------------------------------------------------*/
 
-bool check_difficulty(char* hash, WORD difficulty){
+bool check_difficulty(const char* hash, WORD difficulty){
 
     for (int i = 0; i < difficulty; ++i) {
         if(hash[i] != '0') return false;
@@ -173,7 +173,7 @@ Blockchain* hash_block(Blockchain* b){
     end = clock();
     double exec_time = ((double) (end - start)) / CLOCKS_PER_SEC;
 
-    printf("==Block %u==    Block hash: %s%s%s in %fs (%s) and nonce is %d\n", b->size, GREEN, "Created", RESET, exec_time, b->sentinel->previous->current_hash, b->sentinel->previous->nonce);
+    printf("==Block %u==    Block hash: %s%s%s in %fs (%s%s%s) and nonce is %d\n", b->size, GREEN, "Created", RESET, exec_time, MAGENTA, b->sentinel->previous->current_hash, RESET, b->sentinel->previous->nonce);
 
     return b;
 }
@@ -199,8 +199,6 @@ bool check_merkel_tree(Block* block){
     for (int k = 0; k < block->nb_transactions; ++k) free(hashed_transaction[k]);
     free(hashed_transaction);
 
-    //printf("%s %s\n", block->merklel_root_hash, merklel_tmp);
-
     if(!strcmp((char*)block->merklel_root_hash, (char*)merklel_tmp)) return true;
 
     return false;
@@ -208,20 +206,81 @@ bool check_merkel_tree(Block* block){
 
 /*-----------------------------------------------------------------*/
 
+bool block_hash_check(Block* block){
+
+    BYTE buffer[150];
+    char current_hash[(SHA256_BLOCK_SIZE*2 +1)];
+
+    snprintf((char*)buffer, sizeof(buffer), "%d%ld%s%s%d",
+             block->index,
+             block->timestamp,
+             block->last_hash,
+             block->merklel_root_hash,
+             block->nonce);
+
+    sha256ofString(buffer, current_hash);
+
+    if(!strcmp((char*)current_hash, (char*)block->current_hash)) return true;
+    return  false;
+}
+
+/*-----------------------------------------------------------------*/
+
+bool hash_continuity(Blockchain* blockchain){
+
+    Block* current = blockchain->sentinel->next;
+
+    bool continuity = true;
+
+    for (WORD i = 1; i < blockchain->size; ++i) {
+
+        if(strcmp((char*)current->previous->current_hash, (char*)current->last_hash)){
+            continuity = false;
+            break;
+        }
+
+        current = current->next;
+    }
+
+    return continuity;
+}
+
+/*-----------------------------------------------------------------*/
+
 bool integrity_check(Blockchain* blockchain){
 
-    Block* current = blockchain->sentinel;
+    Block* current = blockchain->sentinel->next;
 
-    printf("%d\n", blockchain->size);
+    bool merkel_tree = false;
+    bool hash = false;
+    int continuity = 0;
 
     for (WORD i = 0; i < blockchain->size; ++i) {
-        if(check_merkel_tree(current)){
-            printf("Block %d merkel : ok\n", i);
+        if((merkel_tree = check_merkel_tree(current->previous)) == true){
+            printf("==Block %u Integrity==    Merkel Tree is: %s%s%s\n", i, GREEN, "Ok", RESET);
+            if((hash = block_hash_check(current->previous)) == true) printf("==Block %u Integrity==    Hash is: %s%s%s\n", i, GREEN, "Ok", RESET);
+            else{
+                printf("==Block %u Integrity==    ", i);
+                error(40, MAGENTA, "Hash is corrupted");
+            }
+        }
+        else{
+            printf("==Block %u Integrity==    ", i);
+            error(40, MAGENTA, "Merkel Tree is corrupted");
+        }
+        if((continuity = strcmp((char*)current->previous->current_hash, (char*)current->previous->last_hash)) == 0){
+            printf("==Global  Integrity==    ");
+            error(40, MAGENTA, "Hash is corrupted");
         }
         current = current->next;
     }
 
-    return true;
+    if(merkel_tree && hash && continuity){
+        printf("%s==BChain  Integrity ==    ", CYAN);
+        return true;
+    }
+    return false;
+
 }
 
 /*-----------------------------------------------------------------*/

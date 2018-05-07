@@ -8,6 +8,8 @@
 #include <assert.h>
 #include <stdbool.h> //boolean type
 #include "../processing/Merkel_Hash.h"
+#include "../error/Error.h"
+#include "../Config.h"
 
 #define MAX_VALUE 1000      //max transaction amount
 #define MAX_VALUE_LENGTH 4  //length of MAX_VALUE
