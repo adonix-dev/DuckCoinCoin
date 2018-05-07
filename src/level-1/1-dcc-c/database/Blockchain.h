@@ -26,6 +26,8 @@ Blockchain* calculate_merkle_root(Blockchain* b);
 
 Blockchain* hash_block(Blockchain* b);
 
+bool integrity_check(Blockchain* blockchain);
+
 void clear_blockchain(blockchainPtr* blockchain);
 
 unsigned int block_count(Blockchain* blockchain);

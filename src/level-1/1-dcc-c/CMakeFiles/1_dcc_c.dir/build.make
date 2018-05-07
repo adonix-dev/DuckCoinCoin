@@ -225,6 +225,54 @@ CMakeFiles/1_dcc_c.dir/utils/blockchain_utils.c.o.provides: CMakeFiles/1_dcc_c.d
 CMakeFiles/1_dcc_c.dir/utils/blockchain_utils.c.o.provides.build: CMakeFiles/1_dcc_c.dir/utils/blockchain_utils.c.o
 
 
+CMakeFiles/1_dcc_c.dir/gui/gui.c.o: CMakeFiles/1_dcc_c.dir/flags.make
+CMakeFiles/1_dcc_c.dir/gui/gui.c.o: gui/gui.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/1_dcc_c.dir/gui/gui.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/1_dcc_c.dir/gui/gui.c.o   -c /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/gui/gui.c
+
+CMakeFiles/1_dcc_c.dir/gui/gui.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/1_dcc_c.dir/gui/gui.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/gui/gui.c > CMakeFiles/1_dcc_c.dir/gui/gui.c.i
+
+CMakeFiles/1_dcc_c.dir/gui/gui.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/1_dcc_c.dir/gui/gui.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/gui/gui.c -o CMakeFiles/1_dcc_c.dir/gui/gui.c.s
+
+CMakeFiles/1_dcc_c.dir/gui/gui.c.o.requires:
+
+.PHONY : CMakeFiles/1_dcc_c.dir/gui/gui.c.o.requires
+
+CMakeFiles/1_dcc_c.dir/gui/gui.c.o.provides: CMakeFiles/1_dcc_c.dir/gui/gui.c.o.requires
+	$(MAKE) -f CMakeFiles/1_dcc_c.dir/build.make CMakeFiles/1_dcc_c.dir/gui/gui.c.o.provides.build
+.PHONY : CMakeFiles/1_dcc_c.dir/gui/gui.c.o.provides
+
+CMakeFiles/1_dcc_c.dir/gui/gui.c.o.provides.build: CMakeFiles/1_dcc_c.dir/gui/gui.c.o
+
+
+CMakeFiles/1_dcc_c.dir/gui/Term_canon.c.o: CMakeFiles/1_dcc_c.dir/flags.make
+CMakeFiles/1_dcc_c.dir/gui/Term_canon.c.o: gui/Term_canon.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/1_dcc_c.dir/gui/Term_canon.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/1_dcc_c.dir/gui/Term_canon.c.o   -c /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/gui/Term_canon.c
+
+CMakeFiles/1_dcc_c.dir/gui/Term_canon.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/1_dcc_c.dir/gui/Term_canon.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/gui/Term_canon.c > CMakeFiles/1_dcc_c.dir/gui/Term_canon.c.i
+
+CMakeFiles/1_dcc_c.dir/gui/Term_canon.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/1_dcc_c.dir/gui/Term_canon.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/gui/Term_canon.c -o CMakeFiles/1_dcc_c.dir/gui/Term_canon.c.s
+
+CMakeFiles/1_dcc_c.dir/gui/Term_canon.c.o.requires:
+
+.PHONY : CMakeFiles/1_dcc_c.dir/gui/Term_canon.c.o.requires
+
+CMakeFiles/1_dcc_c.dir/gui/Term_canon.c.o.provides: CMakeFiles/1_dcc_c.dir/gui/Term_canon.c.o.requires
+	$(MAKE) -f CMakeFiles/1_dcc_c.dir/build.make CMakeFiles/1_dcc_c.dir/gui/Term_canon.c.o.provides.build
+.PHONY : CMakeFiles/1_dcc_c.dir/gui/Term_canon.c.o.provides
+
+CMakeFiles/1_dcc_c.dir/gui/Term_canon.c.o.provides.build: CMakeFiles/1_dcc_c.dir/gui/Term_canon.c.o
+
+
 # Object files for target 1_dcc_c
 1_dcc_c_OBJECTS = \
 "CMakeFiles/1_dcc_c.dir/main.c.o" \
@@ -233,7 +281,9 @@ CMakeFiles/1_dcc_c.dir/utils/blockchain_utils.c.o.provides.build: CMakeFiles/1_d
 "CMakeFiles/1_dcc_c.dir/database/Blockchain.c.o" \
 "CMakeFiles/1_dcc_c.dir/processing/Merkel_Hash.c.o" \
 "CMakeFiles/1_dcc_c.dir/error/Error.c.o" \
-"CMakeFiles/1_dcc_c.dir/utils/blockchain_utils.c.o"
+"CMakeFiles/1_dcc_c.dir/utils/blockchain_utils.c.o" \
+"CMakeFiles/1_dcc_c.dir/gui/gui.c.o" \
+"CMakeFiles/1_dcc_c.dir/gui/Term_canon.c.o"
 
 # External object files for target 1_dcc_c
 1_dcc_c_EXTERNAL_OBJECTS =
@@ -245,9 +295,11 @@ CMakeFiles/1_dcc_c.dir/utils/blockchain_utils.c.o.provides.build: CMakeFiles/1_d
 1_dcc_c: CMakeFiles/1_dcc_c.dir/processing/Merkel_Hash.c.o
 1_dcc_c: CMakeFiles/1_dcc_c.dir/error/Error.c.o
 1_dcc_c: CMakeFiles/1_dcc_c.dir/utils/blockchain_utils.c.o
+1_dcc_c: CMakeFiles/1_dcc_c.dir/gui/gui.c.o
+1_dcc_c: CMakeFiles/1_dcc_c.dir/gui/Term_canon.c.o
 1_dcc_c: CMakeFiles/1_dcc_c.dir/build.make
 1_dcc_c: CMakeFiles/1_dcc_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable 1_dcc_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/antonylaget/Documents/GitHub/DuckCoinCoin/src/level-1/1-dcc-c/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking C executable 1_dcc_c"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/1_dcc_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -262,6 +314,8 @@ CMakeFiles/1_dcc_c.dir/requires: CMakeFiles/1_dcc_c.dir/database/Blockchain.c.o.
 CMakeFiles/1_dcc_c.dir/requires: CMakeFiles/1_dcc_c.dir/processing/Merkel_Hash.c.o.requires
 CMakeFiles/1_dcc_c.dir/requires: CMakeFiles/1_dcc_c.dir/error/Error.c.o.requires
 CMakeFiles/1_dcc_c.dir/requires: CMakeFiles/1_dcc_c.dir/utils/blockchain_utils.c.o.requires
+CMakeFiles/1_dcc_c.dir/requires: CMakeFiles/1_dcc_c.dir/gui/gui.c.o.requires
+CMakeFiles/1_dcc_c.dir/requires: CMakeFiles/1_dcc_c.dir/gui/Term_canon.c.o.requires
 
 .PHONY : CMakeFiles/1_dcc_c.dir/requires
 

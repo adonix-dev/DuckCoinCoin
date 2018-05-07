@@ -36,7 +36,7 @@ Blockchain* blockchain(WORD difficulty){
     Blockchain* blockchain = malloc(sizeof(struct s_blockchain));
     blockchain->sentinel = malloc(sizeof(struct s_Block));
     blockchain->difficulty = difficulty;
-    blockchain->size = 0;
+    blockchain->size = 1;
 
     blockchain->sentinel->index = 0;
     blockchain->sentinel->timestamp = time(NULL);
@@ -59,7 +59,7 @@ Blockchain* new_block(Blockchain* b){
 
     struct s_Block* nb = malloc(sizeof(struct s_Block));
 
-    nb->index = ++(b->size);
+    nb->index = (b->size)++;
     nb->timestamp = time(NULL);
     stpcpy((char*)nb->last_hash , (char*)b->sentinel->previous->current_hash);
     nb->nb_transactions = (BYTE)(rand()%(MAX_TRANSACTION)+1);
@@ -89,7 +89,7 @@ Blockchain* set_block_transactions(Blockchain* b){
         snprintf(buffer, sizeof(buffer), "%s %d", transaction_details,  random_exchange_value);
         strcpy((char*)b->sentinel->previous->transaction_details[i], buffer);
 
-        printf("==Block %d==    Random Transaction %2d: %s%s%s (%s)\n", b->sentinel->previous->index, i+1 ,GREEN, "Created", RESET, buffer);
+        printf("==Block %d==    Random Transaction %2d: %s%s%s (%s)\n", b->sentinel->previous->index+1, i+1 ,GREEN, "Created", RESET, buffer);
     }
     return b;
 }
@@ -173,9 +173,55 @@ Blockchain* hash_block(Blockchain* b){
     end = clock();
     double exec_time = ((double) (end - start)) / CLOCKS_PER_SEC;
 
-    printf("==Block %u==    Block hash: %s%s%s in %fs (%s)\n", b->size, GREEN, "Created", RESET, exec_time, b->sentinel->previous->current_hash);
+    printf("==Block %u==    Block hash: %s%s%s in %fs (%s) and nonce is %d\n", b->size, GREEN, "Created", RESET, exec_time, b->sentinel->previous->current_hash, b->sentinel->previous->nonce);
 
     return b;
+}
+
+/*-----------------------------------------------------------------*/
+
+bool check_merkel_tree(Block* block){
+
+    size_t nb_hash = block->nb_transactions;
+
+    char** hashed_transaction = malloc(nb_hash * sizeof(char*));
+
+    for (int i = 0; i < nb_hash; i++){
+        hashed_transaction[i] = malloc((SHA256_BLOCK_SIZE*2 +1) * sizeof(BYTE));
+        sha256ofString(block->transaction_details[i], hashed_transaction[i]);
+    }
+
+    while(nb_hash != 1) hash_hash(hashed_transaction, &nb_hash);
+
+    BYTE merklel_tmp[SHA256_BLOCK_SIZE*2+1];
+    strcpy((char*)merklel_tmp, hashed_transaction[nb_hash-1]);
+
+    for (int k = 0; k < block->nb_transactions; ++k) free(hashed_transaction[k]);
+    free(hashed_transaction);
+
+    //printf("%s %s\n", block->merklel_root_hash, merklel_tmp);
+
+    if(!strcmp((char*)block->merklel_root_hash, (char*)merklel_tmp)) return true;
+
+    return false;
+}
+
+/*-----------------------------------------------------------------*/
+
+bool integrity_check(Blockchain* blockchain){
+
+    Block* current = blockchain->sentinel;
+
+    printf("%d\n", blockchain->size);
+
+    for (WORD i = 0; i < blockchain->size; ++i) {
+        if(check_merkel_tree(current)){
+            printf("Block %d merkel : ok\n", i);
+        }
+        current = current->next;
+    }
+
+    return true;
 }
 
 /*-----------------------------------------------------------------*/

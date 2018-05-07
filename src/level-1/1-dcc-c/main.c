@@ -1,33 +1,18 @@
-#include <stdio.h>
-#include "Config.h"
-#include "error/Error.h"
-#include "database/Blockchain.h"
+#include "./utils/blockchain_utils.h"
+#include "./gui/gui.h"
 
 int main(int argc, const char* argv[]) {
 
-    clock_t start, end;
-    start = clock();
+    if(argc<2) error(404, RED, "Please precise number of block");
 
-    Blockchain* b = blockchain(DIFFICULTY);
+    int number_of_block = atoi(argv[1]);
+    int difficulty = atoi(argv[2]);
 
-    set_block_transactions(b);
-    calculate_merkle_root(b);
-    hash_block(b);
-    printf("\n");
+    //gui(&number_of_block, &difficulty);
 
-    for (int i = 0; i < atoi(argv[1])-1; ++i) {
-        new_block(b);
-        set_block_transactions(b);
-        calculate_merkle_root(b);
-        hash_block(b);
-        printf("\n");
-    }
+    //printf("%d %d\n", number_of_block, difficulty);
 
-    clear_blockchain(&b);
-
-    end = clock();
-    double exec_time = ((double) (end - start)) / CLOCKS_PER_SEC;
-    printf("%d Blocks hashed in: %f with a difficulty of %d\n", atoi(argv[1]), exec_time, DIFFICULTY);
+    create_random_blockchain(number_of_block, difficulty);
 
     return 0;
 }

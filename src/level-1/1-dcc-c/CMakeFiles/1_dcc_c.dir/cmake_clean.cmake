@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/1_dcc_c.dir/processing/Merkel_Hash.c.o"
   "CMakeFiles/1_dcc_c.dir/error/Error.c.o"
   "CMakeFiles/1_dcc_c.dir/utils/blockchain_utils.c.o"
+  "CMakeFiles/1_dcc_c.dir/gui/gui.c.o"
+  "CMakeFiles/1_dcc_c.dir/gui/Term_canon.c.o"
   "1_dcc_c.pdb"
   "1_dcc_c"
 )
