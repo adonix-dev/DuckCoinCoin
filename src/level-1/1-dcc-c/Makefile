@@ -231,6 +231,60 @@ error/Error.c.s:
 	$(MAKE) -f CMakeFiles/1_dcc_c.dir/build.make CMakeFiles/1_dcc_c.dir/error/Error.c.s
 .PHONY : error/Error.c.s
 
+gui/Term_canon.o: gui/Term_canon.c.o
+
+.PHONY : gui/Term_canon.o
+
+# target to build an object file
+gui/Term_canon.c.o:
+	$(MAKE) -f CMakeFiles/1_dcc_c.dir/build.make CMakeFiles/1_dcc_c.dir/gui/Term_canon.c.o
+.PHONY : gui/Term_canon.c.o
+
+gui/Term_canon.i: gui/Term_canon.c.i
+
+.PHONY : gui/Term_canon.i
+
+# target to preprocess a source file
+gui/Term_canon.c.i:
+	$(MAKE) -f CMakeFiles/1_dcc_c.dir/build.make CMakeFiles/1_dcc_c.dir/gui/Term_canon.c.i
+.PHONY : gui/Term_canon.c.i
+
+gui/Term_canon.s: gui/Term_canon.c.s
+
+.PHONY : gui/Term_canon.s
+
+# target to generate assembly for a file
+gui/Term_canon.c.s:
+	$(MAKE) -f CMakeFiles/1_dcc_c.dir/build.make CMakeFiles/1_dcc_c.dir/gui/Term_canon.c.s
+.PHONY : gui/Term_canon.c.s
+
+gui/gui.o: gui/gui.c.o
+
+.PHONY : gui/gui.o
+
+# target to build an object file
+gui/gui.c.o:
+	$(MAKE) -f CMakeFiles/1_dcc_c.dir/build.make CMakeFiles/1_dcc_c.dir/gui/gui.c.o
+.PHONY : gui/gui.c.o
+
+gui/gui.i: gui/gui.c.i
+
+.PHONY : gui/gui.i
+
+# target to preprocess a source file
+gui/gui.c.i:
+	$(MAKE) -f CMakeFiles/1_dcc_c.dir/build.make CMakeFiles/1_dcc_c.dir/gui/gui.c.i
+.PHONY : gui/gui.c.i
+
+gui/gui.s: gui/gui.c.s
+
+.PHONY : gui/gui.s
+
+# target to generate assembly for a file
+gui/gui.c.s:
+	$(MAKE) -f CMakeFiles/1_dcc_c.dir/build.make CMakeFiles/1_dcc_c.dir/gui/gui.c.s
+.PHONY : gui/gui.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -333,6 +387,12 @@ help:
 	@echo "... error/Error.o"
 	@echo "... error/Error.i"
 	@echo "... error/Error.s"
+	@echo "... gui/Term_canon.o"
+	@echo "... gui/Term_canon.i"
+	@echo "... gui/Term_canon.s"
+	@echo "... gui/gui.o"
+	@echo "... gui/gui.i"
+	@echo "... gui/gui.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

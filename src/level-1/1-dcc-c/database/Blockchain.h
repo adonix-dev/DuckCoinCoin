@@ -8,6 +8,8 @@
 #include <assert.h>
 #include <stdbool.h> //boolean type
 #include "../processing/Merkel_Hash.h"
+#include "../error/Error.h"
+#include "../Config.h"
 
 #define MAX_VALUE 1000      //max transaction amount
 #define MAX_VALUE_LENGTH 4  //length of MAX_VALUE
@@ -25,6 +27,10 @@ Blockchain* set_block_transactions(Blockchain* b);
 Blockchain* calculate_merkle_root(Blockchain* b);
 
 Blockchain* hash_block(Blockchain* b);
+
+bool integrity_check(Blockchain* blockchain);
+
+void delete_block_at(Blockchain* blockchain, int block_index);
 
 void clear_blockchain(blockchainPtr* blockchain);
 

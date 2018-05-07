@@ -1,33 +1,61 @@
-#include <stdio.h>
-#include "Config.h"
-#include "error/Error.h"
-#include "database/Blockchain.h"
+#include "./utils/blockchain_utils.h"
+#include "./gui/gui.h"
 
 int main(int argc, const char* argv[]) {
 
-    clock_t start, end;
-    start = clock();
+    int number_of_block;
+    int difficulty;
+    int choice;
+    int exit = 0;
 
-    Blockchain* b = blockchain(DIFFICULTY);
+    gui(&number_of_block, &difficulty);
 
-    set_block_transactions(b);
-    calculate_merkle_root(b);
-    hash_block(b);
-    printf("\n");
+    Blockchain* blockchain = create_random_blockchain(number_of_block, difficulty);
 
-    for (int i = 0; i < atoi(argv[1])-1; ++i) {
-        new_block(b);
-        set_block_transactions(b);
-        calculate_merkle_root(b);
-        hash_block(b);
-        printf("\n");
+
+
+    while(true){
+        printf("------------------------------------------\n");
+        printf("Enter: \n"
+                       "1 - If you want to check the blockchain integrity \n"
+                       "2 - If you want to delete a block\n"
+                       "3 - If you want to change a transaction\n"
+                       "4 - If you want to exit (all blockchain is lost)\n");
+
+        printf("-->    ");
+        scanf("%d", &choice);
+
+        switch (choice){
+
+            case 1:
+                blockchain_integrity_check(blockchain);
+                break;
+            case 2:
+                printf("maelle\n");
+                printf("Enter le block you want to delete (<%d) -->  ", block_count(blockchain)-1);
+                scanf("%d", &choice);
+                while(choice>block_count(blockchain)-1){
+                    printf("%sEnter a value less than %d%s------------>   ",RED, block_count(blockchain)-1, RESET);
+                    scanf("%d", &choice);
+                }
+                delete_block(blockchain, choice);
+                printf("Block %d deleted", choice);
+                break;
+            case 3:
+                printf("Not Implemented\n");
+                break;
+            case 4:
+                printf("%s%s%s", BLUE, "Blockchain erased !\nProgram closed\n", RESET);
+                exit = 1;
+                break;
+        }
+
+        if(exit) break;
+        printf("------------------------------------------\n");
+
     }
 
-    clear_blockchain(&b);
-
-    end = clock();
-    double exec_time = ((double) (end - start)) / CLOCKS_PER_SEC;
-    printf("%d Blocks hashed in: %f with a difficulty of %d\n", atoi(argv[1]), exec_time, DIFFICULTY);
+    clear_blockchain(&blockchain);
 
     return 0;
 }
